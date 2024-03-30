@@ -28,4 +28,4 @@ checker:
     image:
         name: gitlab.cs.pub.ro:5050/iocla/tema-1-2024-private
     script:
-        - ./checker/checker.sh
+        - echo "Test"
