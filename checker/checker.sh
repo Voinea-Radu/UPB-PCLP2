@@ -91,18 +91,13 @@ run_test()
 
 test_all()
 {
-    for i in $(seq 0 "$((${#test_fun_array[@]} / 3 - 1))") ; do
-        run_test "$i"
-    done
-
-    echo -e "\nTotal: $SCORE/$TOTAL_SCORE"
+    cd ../src
+    make clean
+    ulimit -n 1024
+    cd ..
+    echo '<VMCK_NEXT_BEGIN>'
+    hw_checker --legacy
+    echo '<VMCK_NEXT_END>'
 }
 
-setup
-if [ -z "$1" ] ; then
-    test_all
-else
-    run_test "$1"
-    exit $?
-fi
-cleanup
+test_all
