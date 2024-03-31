@@ -257,8 +257,6 @@ Astfel, vă recomandăm următoarele resurse:
 
 ### Exerciții (50p)
 
-TODO: inspect the skel and describe how the tasks are going to be called
-
 > **Atenție**: Este obligatorie folosirea funcționalelor implementate la punctele anterioare în rezolvarea acestor task-uri.
 În caz contrar, nu veți primi punctajul pe task-ul respectiv.
 
@@ -318,8 +316,6 @@ Coding style-ul poate fi rulat direct din checker, sau folosind comanda
 - \>= 5 de tipul `WARNING` => -5 puncte
 - \>= 1 de tipul `ERROR` => -10 puncte
 
-## Mențiuni
-
 ## Checker
 
 ### Pasi de instalare
@@ -333,7 +329,7 @@ urmatorii pasi:
 urmatorii pasi, incercati sa adaugati cargo (package managerul de rust) la
 PATH, ruland urmatoarea comand `source "$HOME/.cargo/env"`.
 
-2. Rulati urmatoarea comanda ca sa ma instalati checkerul:
+2. Rulati urmatoarea comanda ca sa instalati checkerul:
 ```bash
 $ cargo install hw_checker
 ```
