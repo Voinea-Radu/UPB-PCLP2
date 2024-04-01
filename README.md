@@ -1,8 +1,8 @@
 # Funcționale în C
 
-**Deadline hard**: 14 aprilie 2024, 11:55AM
+**Deadline soft**: 14 aprilie 2024, 11:55AM
 
-**Deadline soft**: 19 aprilie 2024, 11:55AM
+**Deadline hard**: 19 aprilie 2024, 11:55AM
 
 **Responsabili**
 
