@@ -1,6 +1,8 @@
 # Funcționale în C
 
-**Deadline hard**: 2 aprilie 2024, 11:55AM
+**Deadline hard**: 14 aprilie 2024, 11:55AM
+
+**Deadline soft**: 19 aprilie 2024, 11:55AM
 
 **Responsabili**
 
@@ -319,6 +321,10 @@ Coding style-ul poate fi rulat direct din checker, sau folosind comanda
 - \>= 1 de tipul `ERROR` => -10 puncte
 
 ## Checker
+
+> ! Atentie, checkerul ruleaza toate testele cu valgrind. Daca aveti erori de
+valgrind nu primiti punctajul pe checkerul de pe moodle. Pentru a activa
+valgrind-ul pe checker, apasati tasta `v` si apare chenarul rosu.
 
 ### Pasi de instalare
 
