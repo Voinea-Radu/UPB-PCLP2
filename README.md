@@ -1,5 +1,7 @@
 # Funcționale în C
 
+**Deadline hard**: 2 aprilie 2024, 11:55AM
+
 **Responsabili**
 
 * [Robert Grancsa](robert.grancsa2002@gmail.com)
