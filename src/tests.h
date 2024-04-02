@@ -89,7 +89,7 @@ void test_create_number_array(void);
 void test_get_passing_students_names(void);
 
 /**
- * @brief Tests check bigger sum task implementation
+ * @brief Tests check bigger sum_helper task implementation
  * Read input from file and print output to file
  *
  */

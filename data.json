@@ -6,7 +6,7 @@
         "name": "Filter",
         "status": "5",
         "log": "2 4 6 8 10 \n",
-        "time_normal": 0.000168584,
+        "time_normal": 0.000176915,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -16,7 +16,7 @@
         "name": "Map",
         "status": "5",
         "log": "19 21 18 26 22 \n",
-        "time_normal": 0.000296198,
+        "time_normal": 0.000187115,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -26,7 +26,7 @@
         "name": "For Each",
         "status": "5",
         "log": "2 3 4 5 6 7 8 9 10 11 \n",
-        "time_normal": 0.000173624,
+        "time_normal": 0.000168275,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -36,7 +36,7 @@
         "name": "Reduce",
         "status": "5",
         "log": "55 \n",
-        "time_normal": 0.000165965,
+        "time_normal": 0.000153464,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -46,7 +46,7 @@
         "name": "Map Multi",
         "status": "10",
         "log": "Jimmut 19 7.9\nAlinafe 21 9.3\nPhaida 18 8.5\nKatarine 26 10.0\nElen 22 5.7\n",
-        "time_normal": 0.000188805,
+        "time_normal": 0.000163865,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10
@@ -56,7 +56,7 @@
         "name": "For Each Multi",
         "status": "10",
         "log": "1 11 21\n2 12 22\n3 13 23\n4 14 24\n5 15 25\n6 16 26\n7 17 27\n8 18 28\n",
-        "time_normal": 0.000160325,
+        "time_normal": 0.000169025,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10
@@ -66,7 +66,7 @@
         "name": "Reduce Multi",
         "status": "10",
         "log": "-111 \n",
-        "time_normal": 0.000160404,
+        "time_normal": 0.000169875,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10
@@ -74,19 +74,19 @@
       {
         "id": 7,
         "name": "Reverse",
-        "status": "0",
-        "log": "",
-        "time_normal": 0.000170884,
-        "time_valgrind": 0.0,
+        "status": "7",
+        "log": "10 9 8 7 6 5 4 3 2 1 \n",
+        "time_normal": 0.000177476,
+        "time_valgrind": 0.276300699,
         "timeout": 30000,
         "test_score": 7
       },
       {
         "id": 8,
         "name": "Number Array",
-        "status": "0",
-        "log": "",
-        "time_normal": 0.000146114,
+        "status": "7",
+        "log": "1.0\n2.9\n3.8\n4.7\n5.6\n6.5\n7.4\n8.3\n9.2\n10.1\n",
+        "time_normal": 0.000175935,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 7
@@ -94,9 +94,9 @@
       {
         "id": 9,
         "name": "Passing Name",
-        "status": "0",
-        "log": "",
-        "time_normal": 0.000358918,
+        "status": "8",
+        "log": "Jimmut Alinafe Phaida Katarine Elen \n",
+        "time_normal": 0.000156324,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 8
@@ -104,9 +104,9 @@
       {
         "id": 10,
         "name": "Check Sum",
-        "status": "0",
-        "log": "",
-        "time_normal": 0.000224375,
+        "status": "9",
+        "log": "true false false true false \n",
+        "time_normal": 0.000167636,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 9
@@ -114,9 +114,9 @@
       {
         "id": 11,
         "name": "Even Index",
-        "status": "0",
-        "log": "",
-        "time_normal": 0.000189065,
+        "status": "9",
+        "log": "Jimmut Phaida Elen \n",
+        "time_normal": 0.000308598,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 9
@@ -124,9 +124,9 @@
       {
         "id": 12,
         "name": "Square Matrix",
-        "status": "0",
-        "log": "",
-        "time_normal": 0.000275398,
+        "status": "10",
+        "log": "1 2 3 4 5 6 7 8 \n2 3 4 5 6 7 8 9 \n3 4 5 6 7 8 9 10 \n4 5 6 7 8 9 10 11 \n5 6 7 8 9 10 11 12 \n6 7 8 9 10 11 12 13 \n7 8 9 10 11 12 13 14 \n8 9 10 11 12 13 14 15 \n",
+        "time_normal": 0.000294777,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10

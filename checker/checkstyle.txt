@@ -1,0 +1,445 @@
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:20: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:34: CHECK:LONG_LINE: line length of 88 exceeds 80 columns
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:35: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:36: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:70: CHECK:LONG_LINE: line length of 95 exceeds 80 columns
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:83: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:84: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:87: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:88: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:118: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:119: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:125: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:150: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:151: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:155: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:156: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:163: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:164: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:170: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:171: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:177: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:178: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:188: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:196: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:200: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:201: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:207: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:208: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:234: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:243: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:244: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:254: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:270: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:282: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:305: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:306: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:310: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:311: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:315: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:333: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:334: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:335: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:359: CHECK:LONG_LINE: line length of 87 exceeds 80 columns
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:420: CHECK:LONG_LINE: line length of 239 exceeds 80 columns
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:422: CHECK:SPACING: spaces preferred around that '*' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:435: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:436: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:440: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:455: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:455: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:457: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:457: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:461: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:461: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:465: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:490: CHECK:CAMELCASE: Avoid CamelCase: <__FreeBSD__>
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:490: CHECK:CAMELCASE: Avoid CamelCase: <__FreeBSD>
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:493: CHECK:CAMELCASE: Avoid CamelCase: <__NetBSD__>
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:493: CHECK:CAMELCASE: Avoid CamelCase: <__NetBSD>
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:496: CHECK:CAMELCASE: Avoid CamelCase: <__OpenBSD__>
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:502: CHECK:LONG_LINE: line length of 95 exceeds 80 columns
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:511: CHECK:CAMELCASE: Avoid CamelCase: <__BeOS>
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:749: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:749: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'n' - possible side-effects?
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:750: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:750: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:751: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:751: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:752: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:752: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:753: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:753: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:754: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:754: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:755: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:755: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:756: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:756: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:757: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:760: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:760: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'n' - possible side-effects?
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:761: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:761: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:762: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:762: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:763: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:763: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:764: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:764: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:765: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:765: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:766: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:766: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:767: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:767: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:768: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:772: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:772: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:777: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:779: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:781: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:783: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:785: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:789: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:789: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:795: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:796: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:797: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:798: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:798: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:798: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:800: CHECK:LONG_LINE: line length of 110 exceeds 80 columns
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:800: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:800: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:806: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:807: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:808: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:810: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:812: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:814: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:818: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:818: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:825: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:825: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:826: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:826: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:828: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:847: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:848: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:848: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:850: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:850: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:852: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:853: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:854: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:856: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:863: ERROR:FUNCTION_WITHOUT_ARGS: Bad function definition - void main() should probably be void main(void)
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:868: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:871: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:872: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:873: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:874: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:876: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:879: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:882: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:885: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:888: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:890: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:891: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:892: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:893: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./src/functional.c:8: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:25: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:26: CHECK:LONG_LINE: line length of 89 exceeds 80 columns
+./src/functional.c:43: CHECK:LONG_LINE: line length of 122 exceeds 80 columns
+./src/functional.c:50: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./src/functional.c:56: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:70: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:77: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:85: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:105: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:112: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:127: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:135: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./src/functional.c:147: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:154: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.c:162: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/functional.h:28: WARNING:REPEATED_WORD: Possible repeated word: 'function'
+./src/functional.h:90: CHECK:LONG_LINE_COMMENT: line length of 83 exceeds 80 columns
+./src/tasks.c:10: CHECK:LONG_LINE: line length of 82 exceeds 80 columns
+./src/tasks.c:35: CHECK:LONG_LINE: line length of 84 exceeds 80 columns
+./src/tasks.c:46: CHECK:LONG_LINE: line length of 91 exceeds 80 columns
+./src/tasks.c:89: CHECK:LONG_LINE: line length of 81 exceeds 80 columns
+./src/tasks.c:93: CHECK:LONG_LINE: line length of 130 exceeds 80 columns
+./src/tasks.c:105: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./src/tasks.c:106: CHECK:LONG_LINE: line length of 119 exceeds 80 columns
+./src/tasks.c:114: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "element"
+./src/tasks.c:115: CHECK:LONG_LINE: line length of 119 exceeds 80 columns
+./src/tasks.c:153: ERROR:FUNCTION_WITHOUT_ARGS: Bad function definition - void foo() should probably be void foo(void)
+./src/tasks.c:155: CHECK:BRACES: Blank lines aren't necessary after an open brace '{'
+./src/tasks.c:156: CHECK:BRACES: Blank lines aren't necessary before a close brace '}'
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:20: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:34: CHECK:LONG_LINE: line length of 88 exceeds 80 columns
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:35: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:36: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:70: CHECK:LONG_LINE: line length of 95 exceeds 80 columns
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:83: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:84: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:87: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:88: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:118: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:119: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:125: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:150: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:151: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:155: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:156: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:163: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:164: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:170: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:171: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:177: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:178: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:188: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:196: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:200: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:201: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:207: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:208: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:235: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:236: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:246: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:262: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:274: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:291: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:292: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:296: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:297: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:301: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:319: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:320: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:321: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:338: CHECK:LONG_LINE: line length of 87 exceeds 80 columns
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:399: CHECK:LONG_LINE: line length of 239 exceeds 80 columns
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:401: CHECK:SPACING: spaces preferred around that '*' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:414: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:415: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:419: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:434: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:434: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:436: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:436: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:440: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:440: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:444: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:469: CHECK:CAMELCASE: Avoid CamelCase: <__FreeBSD__>
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:469: CHECK:CAMELCASE: Avoid CamelCase: <__FreeBSD>
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:472: CHECK:CAMELCASE: Avoid CamelCase: <__NetBSD__>
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:472: CHECK:CAMELCASE: Avoid CamelCase: <__NetBSD>
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:475: CHECK:CAMELCASE: Avoid CamelCase: <__OpenBSD__>
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:481: CHECK:LONG_LINE: line length of 95 exceeds 80 columns
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:490: CHECK:CAMELCASE: Avoid CamelCase: <__BeOS>
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:720: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:720: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'n' - possible side-effects?
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:721: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:721: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:722: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:722: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:723: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:723: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:724: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:724: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:725: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:725: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:726: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:726: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:727: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:727: CHECK:SPACING: spaces preferred around that '%' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:728: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:731: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:731: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'n' - possible side-effects?
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:732: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:732: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:733: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:733: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:734: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:734: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:735: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:735: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:736: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:736: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:737: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:737: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:738: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:738: CHECK:SPACING: spaces preferred around that '>>' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:739: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:743: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:743: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:748: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:749: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:750: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:752: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:754: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:756: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:760: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:760: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:766: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:767: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:768: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:769: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:769: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:769: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:771: CHECK:LONG_LINE: line length of 110 exceeds 80 columns
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:771: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:771: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:777: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:778: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:779: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:781: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:783: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:785: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:789: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:789: ERROR:SPACING: space required after that ',' (ctx:VxV)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:796: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:796: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:797: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:797: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:799: CHECK:LINE_SPACING: Please don't use multiple blank lines
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:818: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:819: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:819: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:821: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:821: WARNING:STRING_FRAGMENTS: Consecutive strings are generally better as a single string
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:823: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:824: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:825: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:827: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:834: ERROR:FUNCTION_WITHOUT_ARGS: Bad function definition - void main() should probably be void main(void)
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:839: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:842: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:843: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:844: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:845: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:847: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:850: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:853: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:856: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:859: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:861: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:862: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:863: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:864: WARNING:LEADING_SPACE: please, no spaces at the start of a line
