@@ -4,9 +4,9 @@
       {
         "id": 0,
         "name": "Filter",
-        "status": "0",
-        "log": "10 \n",
-        "time_normal": 0.00041863,
+        "status": "5",
+        "log": "2 4 6 8 10 \n",
+        "time_normal": 0.000194865,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -16,7 +16,7 @@
         "name": "Map",
         "status": "5",
         "log": "19 21 18 26 22 \n",
-        "time_normal": 0.000233375,
+        "time_normal": 0.000173165,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -26,7 +26,7 @@
         "name": "For Each",
         "status": "5",
         "log": "2 3 4 5 6 7 8 9 10 11 \n",
-        "time_normal": 0.000311087,
+        "time_normal": 0.000197685,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -36,7 +36,7 @@
         "name": "Reduce",
         "status": "5",
         "log": "55 \n",
-        "time_normal": 0.000217346,
+        "time_normal": 0.000170044,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 5
@@ -46,7 +46,7 @@
         "name": "Map Multi",
         "status": "10",
         "log": "Jimmut 19 7.9\nAlinafe 21 9.3\nPhaida 18 8.5\nKatarine 26 10.0\nElen 22 5.7\n",
-        "time_normal": 0.000158949,
+        "time_normal": 0.000176025,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10
@@ -56,7 +56,7 @@
         "name": "For Each Multi",
         "status": "10",
         "log": "1 11 21\n2 12 22\n3 13 23\n4 14 24\n5 15 25\n6 16 26\n7 17 27\n8 18 28\n",
-        "time_normal": 0.000172295,
+        "time_normal": 0.000182014,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10
@@ -66,7 +66,7 @@
         "name": "Reduce Multi",
         "status": "10",
         "log": "-111 \n",
-        "time_normal": 0.000160429,
+        "time_normal": 0.000170344,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10
@@ -76,7 +76,7 @@
         "name": "Reverse",
         "status": "7",
         "log": "10 9 8 7 6 5 4 3 2 1 \n",
-        "time_normal": 0.000222715,
+        "time_normal": 0.000165465,
         "time_valgrind": 0.276300699,
         "timeout": 30000,
         "test_score": 7
@@ -86,7 +86,7 @@
         "name": "Number Array",
         "status": "7",
         "log": "1.0\n2.9\n3.8\n4.7\n5.6\n6.5\n7.4\n8.3\n9.2\n10.1\n",
-        "time_normal": 0.000198455,
+        "time_normal": 0.000164124,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 7
@@ -94,9 +94,9 @@
       {
         "id": 9,
         "name": "Passing Name",
-        "status": "0",
-        "log": "Elen \n",
-        "time_normal": 0.000173495,
+        "status": "8",
+        "log": "Jimmut Alinafe Phaida Katarine Elen \n",
+        "time_normal": 0.000173765,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 8
@@ -106,7 +106,7 @@
         "name": "Check Sum",
         "status": "9",
         "log": "true false false true false \n",
-        "time_normal": 0.000253196,
+        "time_normal": 0.000134723,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 9
@@ -116,7 +116,7 @@
         "name": "Even Index",
         "status": "9",
         "log": "Jimmut Phaida Elen \n",
-        "time_normal": 0.000191516,
+        "time_normal": 0.000176425,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 9
@@ -126,7 +126,7 @@
         "name": "Square Matrix",
         "status": "10",
         "log": "1 2 3 4 5 6 7 8 \n2 3 4 5 6 7 8 9 \n3 4 5 6 7 8 9 10 \n4 5 6 7 8 9 10 11 \n5 6 7 8 9 10 11 12 \n6 7 8 9 10 11 12 13 \n7 8 9 10 11 12 13 14 \n8 9 10 11 12 13 14 15 \n",
-        "time_normal": 0.000301672,
+        "time_normal": 0.000266787,
         "time_valgrind": 0.0,
         "timeout": 30000,
         "test_score": 10

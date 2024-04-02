@@ -39,10 +39,12 @@ array_t filter(boolean(*function)(void *), array_t list)
 	new_list.data = malloc(list.len * list.elem_size);
 
 	for (int i = 0; i < list.len; ++i)
-		if (function(list.data + i * list.elem_size))
+		if (function(list.data + i * list.elem_size)) {
 			memcpy(new_list.data + new_list.len * new_list.elem_size,
 				   list.data + i * list.elem_size, new_list.elem_size);
-	++new_list.len;
+			++new_list.len;
+		}
+
 
 	free(list.data);
 
