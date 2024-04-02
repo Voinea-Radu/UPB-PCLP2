@@ -320,6 +320,12 @@ Coding style-ul poate fi rulat direct din checker, sau folosind comanda
 - \>= 5 de tipul `WARNING` => -5 puncte
 - \>= 1 de tipul `ERROR` => -10 puncte
 
+## Mentiuni
+
+- Implementarea se face doar in `tasks.c` si `functional.c`
+- Este interzis sa folositi variabile globale si/sau statice locale
+- Nu aveti voie sa folositi instructiuni repetitive (for/while) in `tasks.c`
+
 ## Checker
 
 > ! Atentie, checkerul ruleaza toate testele cu valgrind. Daca aveti erori de
