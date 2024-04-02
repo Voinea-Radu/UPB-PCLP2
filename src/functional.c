@@ -90,6 +90,8 @@ void for_each_multiple(void(*function)(void **), int varg_count, ...)
 		function(function_arguments);
 	}
 
+	free(arrays);
+
 	va_end(args);
 }
 
