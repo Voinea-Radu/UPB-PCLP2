@@ -89,6 +89,7 @@ array_t check_bigger_sum(array_t list_list, array_t int_list)
 
 	accumulator_array.elem_size = sizeof(int);
 	accumulator_array.len = 0;
+	accumulator_array.destructor = NULL;
 	accumulator_array.data = malloc(list_list.len *
 									accumulator_array.elem_size);
 
@@ -97,6 +98,9 @@ array_t check_bigger_sum(array_t list_list, array_t int_list)
 	array_t output = map_multiple((void (*)(void *, void **))compare_ints,
 								  sizeof(boolean), NULL, 2, accumulator_array,
 								  int_list);
+
+	for_each(list_list.destructor, list_list);
+	free(list_list.data);
 
 	return output;
 }
