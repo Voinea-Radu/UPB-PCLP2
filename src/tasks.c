@@ -115,8 +115,8 @@ void even_helper_1(array_t *accumulator, void *element)
 	if (accumulator->len % 2 == 0) {
 		memcpy((char *)accumulator->data + accumulator->len *
 										   accumulator->elem_size, element,
-										   accumulator->elem_size);
-	}else{
+			   accumulator->elem_size);
+	} else {
 		accumulator->destructor(element);
 	}
 
@@ -128,7 +128,7 @@ void even_helper_2(array_t *accumulator, void *element)
 	if (*(void **)element) {
 		memcpy((char *)accumulator->data + accumulator->len *
 										   accumulator->elem_size, element,
-										   accumulator->elem_size);
+			   accumulator->elem_size);
 		accumulator->len++;
 	}
 }
@@ -230,7 +230,6 @@ array_t generate_square_matrix(int n)
 	for_each((void (*)(void *))add_one_matrix, output);
 
 	free(_temp_array.data);
-
 
 	return output;
 }
