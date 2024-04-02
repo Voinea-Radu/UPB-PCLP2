@@ -192,6 +192,8 @@ void set_column(array_t *column, array_t *element)
 
 	reduce((void (*)(void *, void *))set_line, arg, *element);
 
+	free(arg);
+
 	((array_t *)column->data)[column->len] = line;
 	column->len++;
 }
@@ -226,6 +228,9 @@ array_t generate_square_matrix(int n)
 	reduce((void (*)(void *, void *))set_column, &output, _temp_array);
 
 	for_each((void (*)(void *))add_one_matrix, output);
+
+	free(_temp_array.data);
+
 
 	return output;
 }
