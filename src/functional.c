@@ -168,6 +168,8 @@ void *reduce_multiple(void(*function)(void *, void **), void *accumulator,
 		function(accumulator, function_arguments);
 	}
 
+	free(arrays);
+
 	va_end(args);
 
 	return accumulator;
