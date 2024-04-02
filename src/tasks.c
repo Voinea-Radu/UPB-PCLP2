@@ -116,6 +116,8 @@ void even_helper_1(array_t *accumulator, void *element)
 		memcpy((char *)accumulator->data + accumulator->len *
 										   accumulator->elem_size, element,
 										   accumulator->elem_size);
+	}else{
+		accumulator->destructor(element);
 	}
 
 	accumulator->len++;
@@ -151,6 +153,9 @@ array_t get_even_indexed_strings(array_t list)
 
 	reduce((void (*)(void *, void *))even_helper_1, &tmp, list);
 	reduce((void (*)(void *, void *))even_helper_2, &output, tmp);
+
+	free(tmp.data);
+	free(list.data);
 
 	return output;
 }
