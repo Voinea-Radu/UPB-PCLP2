@@ -2,3 +2,7 @@
 *.out
 *.valgrind
 functional
+.idea
+check
+cmake-build-debug-wsl
+cmake-build-debug

@@ -237,7 +237,7 @@ checker_main() {
         image_name="$(basename "$(pwd)")"
 
         LOG_INFO "Building image..."
-        docker build "${extra_docker_args[@]}" -q -t "$image_name" .
+        docker build "${extra_docker_args[@]}" -t "$image_name" .
     fi
 
     tmpdir="$(mktemp -d)"
