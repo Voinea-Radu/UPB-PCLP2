@@ -25,7 +25,7 @@ typedef struct {
 } array_t;
 
 /**
- * @brief Applies the function function to each element of the array,
+ * @brief Applies the function to each element of the array,
  * It does not modify the original list
  *
  * @param function A function that takes a pointer to an element of the
@@ -86,8 +86,10 @@ void *reduce(void (*function)(void *, void *), void *accumulator, array_t list);
  * It iterates until the shortest array is exhausted.
  * It does not modify the original arrays.
  *
- * @param function   A function pointer representing the function to be applied.
- * It takes an array of pointers to the elements of the arrays, of size varg_count.
+ * @param function   A function pointer representing the function to be
+ * applied.
+ * It takes an array of pointers to the elements of the arrays, of size
+ * varg_count.
  * @param varg_count Number of arrays to be iterated.
  * @param ...    The arrays to be iterated.
  */

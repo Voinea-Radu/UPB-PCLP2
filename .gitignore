@@ -6,3 +6,4 @@ functional
 check
 cmake-build-debug-wsl
 cmake-build-debug
+.checkpatch-camelcase.git.
