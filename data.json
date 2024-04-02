@@ -7,17 +7,17 @@
         "status": "5",
         "log": "2 4 6 8 10 \n",
         "time_normal": 0.000183424,
-        "time_valgrind": 0.372080891,
+        "time_valgrind": 0.379606431,
         "timeout": 30000,
         "test_score": 5
       },
       {
         "id": 1,
         "name": "Map",
-        "status": "MEMLEAKS",
-        "log": "19 21 18 26 22 \nCheck output folder for valgrind errors",
+        "status": "5",
+        "log": "19 21 18 26 22 \n",
         "time_normal": 0.000197666,
-        "time_valgrind": 0.401569152,
+        "time_valgrind": 0.385090537,
         "timeout": 30000,
         "test_score": 5
       },
@@ -27,7 +27,7 @@
         "status": "5",
         "log": "2 3 4 5 6 7 8 9 10 11 \n",
         "time_normal": 0.000149109,
-        "time_valgrind": 0.396545303,
+        "time_valgrind": 0.369642394,
         "timeout": 30000,
         "test_score": 5
       },
@@ -37,7 +37,7 @@
         "status": "5",
         "log": "55 \n",
         "time_normal": 0.000170123,
-        "time_valgrind": 0.406933021,
+        "time_valgrind": 0.395909886,
         "timeout": 30000,
         "test_score": 5
       },
@@ -47,7 +47,7 @@
         "status": "MEMLEAKS",
         "log": "Jimmut 19 7.9\nAlinafe 21 9.3\nPhaida 18 8.5\nKatarine 26 10.0\nElen 22 5.7\nCheck output folder for valgrind errors",
         "time_normal": 0.000177405,
-        "time_valgrind": 0.395547408,
+        "time_valgrind": 0.413353357,
         "timeout": 30000,
         "test_score": 10
       },
@@ -57,7 +57,7 @@
         "status": "MEMLEAKS",
         "log": "1 11 21\n2 12 22\n3 13 23\n4 14 24\n5 15 25\n6 16 26\n7 17 27\n8 18 28\nCheck output folder for valgrind errors",
         "time_normal": 0.000157014,
-        "time_valgrind": 0.399426227,
+        "time_valgrind": 0.392794347,
         "timeout": 30000,
         "test_score": 10
       },
@@ -67,7 +67,7 @@
         "status": "MEMLEAKS",
         "log": "-111 \nCheck output folder for valgrind errors",
         "time_normal": 0.000169654,
-        "time_valgrind": 0.40032635,
+        "time_valgrind": 0.413194983,
         "timeout": 30000,
         "test_score": 10
       },
@@ -77,7 +77,7 @@
         "status": "7",
         "log": "10 9 8 7 6 5 4 3 2 1 \n",
         "time_normal": 0.000302318,
-        "time_valgrind": 0.38094639,
+        "time_valgrind": 0.377540997,
         "timeout": 30000,
         "test_score": 7
       },
@@ -87,7 +87,7 @@
         "status": "MEMLEAKS",
         "log": "1.0\n2.9\n3.8\n4.7\n5.6\n6.5\n7.4\n8.3\n9.2\n10.1\nCheck output folder for valgrind errors",
         "time_normal": 0.000209795,
-        "time_valgrind": 0.404739204,
+        "time_valgrind": 0.414574608,
         "timeout": 30000,
         "test_score": 7
       },
@@ -97,7 +97,7 @@
         "status": "8",
         "log": "Jimmut Alinafe Phaida Katarine Elen \n",
         "time_normal": 0.000185945,
-        "time_valgrind": 0.40345647,
+        "time_valgrind": 0.417856155,
         "timeout": 30000,
         "test_score": 8
       },
@@ -107,7 +107,7 @@
         "status": "MEMLEAKS",
         "log": "true false false true false \nCheck output folder for valgrind errors",
         "time_normal": 0.000185085,
-        "time_valgrind": 0.377360318,
+        "time_valgrind": 0.387281179,
         "timeout": 30000,
         "test_score": 9
       },
@@ -117,7 +117,7 @@
         "status": "MEMLEAKS",
         "log": "Jimmut Phaida Elen \nCheck output folder for valgrind errors",
         "time_normal": 0.000192726,
-        "time_valgrind": 0.38210811,
+        "time_valgrind": 0.387082489,
         "timeout": 30000,
         "test_score": 9
       },
@@ -127,7 +127,7 @@
         "status": "MEMLEAKS",
         "log": "1 2 3 4 5 6 7 8 \n2 3 4 5 6 7 8 9 \n3 4 5 6 7 8 9 10 \n4 5 6 7 8 9 10 11 \n5 6 7 8 9 10 11 12 \n6 7 8 9 10 11 12 13 \n7 8 9 10 11 12 13 14 \n8 9 10 11 12 13 14 15 \nCheck output folder for valgrind errors",
         "time_normal": 0.000259797,
-        "time_valgrind": 0.397270972,
+        "time_valgrind": 0.386151234,
         "timeout": 30000,
         "test_score": 10
       }

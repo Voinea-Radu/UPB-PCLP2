@@ -21,10 +21,14 @@ array_t map(void (*function)(void *, void *),
 	new_list.destructor = new_list_destructor;
 	new_list.data = malloc(new_list.len * new_list.elem_size);
 
+
 	for (int i = 0; i < list.len; ++i) {
 		function(new_list.data + i * new_list.elem_size, list.data +
 														 i * list.elem_size);
 	}
+
+	for_each(list.destructor, list);
+	free(list.data);
 
 	return new_list;
 }
