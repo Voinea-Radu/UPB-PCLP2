@@ -206,36 +206,6 @@
 ./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:891: WARNING:LEADING_SPACE: please, no spaces at the start of a line
 ./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:892: WARNING:LEADING_SPACE: please, no spaces at the start of a line
 ./cmake-build-debug-wsl/CMakeFiles/3.29.0/CompilerIdC/CMakeCCompilerId.c:893: WARNING:LEADING_SPACE: please, no spaces at the start of a line
-./src/functional.c:8: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:25: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:26: CHECK:LONG_LINE: line length of 89 exceeds 80 columns
-./src/functional.c:43: CHECK:LONG_LINE: line length of 122 exceeds 80 columns
-./src/functional.c:50: CHECK:LINE_SPACING: Please don't use multiple blank lines
-./src/functional.c:56: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:70: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:77: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:85: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:105: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:112: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:127: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:135: ERROR:TRAILING_WHITESPACE: trailing whitespace
-./src/functional.c:147: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:154: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.c:162: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/functional.h:28: WARNING:REPEATED_WORD: Possible repeated word: 'function'
-./src/functional.h:90: CHECK:LONG_LINE_COMMENT: line length of 83 exceeds 80 columns
-./src/tasks.c:10: CHECK:LONG_LINE: line length of 82 exceeds 80 columns
-./src/tasks.c:35: CHECK:LONG_LINE: line length of 84 exceeds 80 columns
-./src/tasks.c:46: CHECK:LONG_LINE: line length of 91 exceeds 80 columns
-./src/tasks.c:89: CHECK:LONG_LINE: line length of 81 exceeds 80 columns
-./src/tasks.c:93: CHECK:LONG_LINE: line length of 130 exceeds 80 columns
-./src/tasks.c:105: WARNING:BRACES: braces {} are not necessary for single statement blocks
-./src/tasks.c:106: CHECK:LONG_LINE: line length of 119 exceeds 80 columns
-./src/tasks.c:114: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "element"
-./src/tasks.c:115: CHECK:LONG_LINE: line length of 119 exceeds 80 columns
-./src/tasks.c:153: ERROR:FUNCTION_WITHOUT_ARGS: Bad function definition - void foo() should probably be void foo(void)
-./src/tasks.c:155: CHECK:BRACES: Blank lines aren't necessary after an open brace '{'
-./src/tasks.c:156: CHECK:BRACES: Blank lines aren't necessary before a close brace '}'
 ./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:20: CHECK:LINE_SPACING: Please don't use multiple blank lines
 ./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:34: CHECK:LONG_LINE: line length of 88 exceeds 80 columns
 ./cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c:35: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)

@@ -45,7 +45,6 @@ array_t filter(boolean(*function)(void *), array_t list)
 			++new_list.len;
 		}
 
-
 	free(list.data);
 
 	return new_list;
