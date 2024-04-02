@@ -5,6 +5,9 @@
 
 void for_each(void (*function)(void *), array_t list)
 {
+	if(function==NULL)
+		return;
+
 	for (int i = 0; i < list.len; ++i)
 		function(list.data + i * list.elem_size);
 }
@@ -124,6 +127,13 @@ array_t map_multiple(void (*function)(void *, void **),
 
 		function(output.data + i * output.elem_size, function_arguments);
 	}
+
+	for (int i = 0; i < varg_count; ++i) {
+		array_t array = arrays[i];
+		for_each(array.destructor, array);
+		free(array.data);
+	}
+	free(arrays);
 
 	va_end(args);
 
