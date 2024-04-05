@@ -7,6 +7,8 @@ build: functional
 
 functional: main.o functional.o tests.o tasks.o
 	$(CC) $(CFLAGS) -o ../$@ $^
+	cp ../$@ .
+	cp ../$@ ../..
 
 main.o: main.c
 	$(CC) $(CFLAGS) -c -o $@ $<
@@ -22,3 +24,5 @@ tasks.o: tasks.c tasks.h
 
 clean:
 	rm -f *.o functional
+	rm -f ../functional
+	rm -f ../../functional

@@ -9,4 +9,4 @@ clean:
 	rm -rf functional
 
 pack:
-	zip -FSr 315CA_VoineaRadu_TEMA1.zip README Makefile src/
+	zip -FSr 315CA_VoineaRadu_TEMA1.zip Makefile src/
