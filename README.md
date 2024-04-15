@@ -71,75 +71,79 @@ Se dau structurile simplificate ale unui login request:
     };
 ```
 
-### Exercitiul 1
+### Exercițiul 1
 
-Pentru aceasta parte a task-ului, aveti de implementat functia `sort_requests()` in fisierul *subtask1.asm*.
+Pentru această parte a task-ului, aveți de implementat funcția `sort_requests()` în fișierul *subtask1.asm*.
 Această funcție va simula sortarea tuturor request-urilor de login.
 
-Pentru a intelege mai bine cum functioneaza un login request, vom explica mai jos ce inseamna fiecare field ale structurilor:
+Pentru a ințelege mai bine cum funcționează un login request, vom explica mai jos ce înseamnă fiecare field al structurilor:
 
-- `admin` ne spune daca request-ul e facut de un admin
-- `prio` reprezinta prioritatea pe care o poate avea un request
-- `creds` reprezinta o structura de tip creds
-- `passkey` reprezinta passkey-ul necesar ca login-ul sa fie realizat
-- `username` reprezinta un string de identificare unic pentru fiecare request
+- `admin` ne spune dacă request-ul e făcut de un admin
+- `prio` reprezintă prioritatea pe care o are un request
+- `creds` reprezintă o structură de tip creds
+- `passkey` reprezintă passkey-ul necesar ca login-ul să fie realizat
+- `username` reprezintă un string de identificare unic pentru fiecare request
 
-Pentru a sorta request-urile, stabilim urmatoarele reguli:
+Pentru a sorta request-urile, stabilim următoarele reguli:
 
-- Request-urile trebuie sa fie sortate astfel incat request-urile facute de admini sa fie primele.
-- Request-urile trebuie sortate dupa prioritate, prioritatea mai mica ca numar e mai "mare".
-- Request-urile cu aceeasi prioritate trebuie apoi sortate alfabetic dupa username.
+- Request-urile trebuie să fie sortate astfel încât request-urile făcute de admini să fie primele.
+- Request-urile trebuie sortate după prioritate; prioritatea reprezentată de un număr mai mic e mai "mare".
+- Request-urile cu aceeași prioritate trebuie apoi sortate alfabetic dupa username.
 
-Sortarea se va face **in place**, adica vectorul `requests` prezentat mai jos va trebui, in urma apelului functiei, sa fie sortat. Antetul functiei este:
+Sortarea se va face **in place**, adică vectorul `requests` prezentat mai jos va trebui, în urma apelului funcției, să fie sortat.
+
+Antetul funcției este:
 
 ```c
 void sort_requests(struct request *requests, int len);
 ```
 
-Semnificatia argumentelor este:
+Semnificația argumentelor este:
 
-- **requests** adresa de inceput a vectorului de request-uri
-- **len** numarul de request-uri
+- **requests:** adresa de început a vectorului de request-uri
+- **len:** numărul de request-uri
 
-**Atentie!** Nu puteti folosi functii externe pentru a sorta vectorul sau pentru a compara username-urile.
+**Atenție!** Nu puteți folosi funcții externe pentru a sorta vectorul sau pentru a compara username-urile.
 
 
-### Exercitiul 2
+### Exercițiul 2
 
-In continuarea exercitiului 1, acum trebuie sa implementati functia `check_passkeys()` in fisierul *subtask2.asm*. Această funcție va verifica daca passkey-ul din interiorul request-ului este unul corect.
-Suricata Zoly s-a prins de faptul ca exista si niste hackeri care vor sa sparga sistemul, dar si de metoda
-prin care vor sa pacaleasca login-ul. Acestia seteaza mereu primul bit si ultimul bit, iar pentru cei 14
-biti ramasi in passkey fac urmatoarele lucruri:
+În continuarea exercițiului 1, acum trebuie să implementați funcția `check_passkeys()` în fișierul *subtask2.asm*.
+Această funcție va verifica dacă passkey-ul din interiorul request-ului este unul corect, care nu e asociat unui hacker.
 
-- pentru cei mai putin semmnificativi 7 biti: numar par de biti de 1
-- pentru cei mai semmnificativi 7 biti: numar impar de biti de 1
+Suricata Zoly s-a prins de faptul că există și niște hackeri care vor să spargă sistemul, dar și de metoda prin care vor să păcălească login-ul.
+Aceștia setează mereu primul bit și ultimul bit din `passkey`, iar pentru cei 14
+biți rămași fac următoarele:
 
-Exemplu:
+- pentru cei mai puțin semnificativi 7 biți: număr par de biți de `1`
+- pentru cei mai semnificativi 7 biți: număr impar de biți de `1`
 
+**Exemplu:**
 ```
     1000 1110 0110 0001 => hacker
 ```
 
-Va trebui sa puneti valorile obtinute in vectorul `connected` prezentat mai jos. Veți pune 0 pentru
-request-urile care nu sunt facute de hackeri, 1 altfel. Antetul functiei este:
+Va trebui să puneți valorile obținute în vectorul `connected[]` prezentat mai jos.
+Veți pune `0` pentru request-urile care nu sunt făcute de hackeri, `1` pentru cele făcute de hackeri.
 
-```
+Antetul funcției este:
+```c
 void check_passkeys(struct request *requests, int len, char *connected);
 ```
 
-Semnificatia argumentelor este:
+Semnificația argumentelor este:
 
-- **requests** adresa de inceput a vectorului de request-uri
-- **len** numarul de request-uri
-- **connected** adresa de inceput a vectorului pentru conexiuni
+- **requests:** adresa de început a vectorului de request-uri
+- **len:** numărul de request-uri
+- **connected:** adresa de început a vectorului pentru conexiuni
 
-**Se garanteaza ca toate valorile raman in limitele tipurilor de date date in structuri**
+**Se garantează că toate valorile rămân în limitele tipurilor de date din definiția structurilor.**
 
-#### **Observatie**
+#### **Observație**
 
-Pentru exercitiul 2 se va folosi acelasi vector folosit si la exercitiul 1. Nu puteti face
-exercitiul 2 fara sa rezolvati exercitiul 1, deoarece ordinea de parcurgere a request-urilor
-trebuie sa fie cea sortata.
+Pentru exercițiul 2 se va folosi același vector folosit și la exercițiul 1. Nu puteți face
+exercițiul 2 fără să rezolvați exercițiul 1, deoarece ordinea de parcurgere a request-urilor
+trebuie să fie cea sortată.
 
 ---
 
