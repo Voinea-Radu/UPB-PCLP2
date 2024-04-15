@@ -43,7 +43,7 @@ Atunci când bitul `j` are valoarea `1` în elementul de la poziția `i`, furnic
 Funcția pe care Zoly trebuie să o implementeze are antetul de mai jos.
 
 ```c
-void check_permission(unsigned int n, unsigned int* res);
+void check_permission(unsigned int n, unsigned int *res);
 ```
 
 **Primul argument** (`n`) este un întreg pe 32 de biți.
