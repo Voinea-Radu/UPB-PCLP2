@@ -17,6 +17,7 @@ checker: check_treyfer.o  treyfer.o
 	gcc -m32 -no-pie -g $^ -o $@
 
 clean:
+	rm output/treyfer_*
 	rm -f checker
-	rm *.o
+	rm *.o 2> /dev/null
 

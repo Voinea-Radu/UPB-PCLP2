@@ -2,7 +2,6 @@
 
 import argparse
 import subprocess
-import shutil
 import os
 import sys
 import re
@@ -26,7 +25,7 @@ tasksNo = 4
 
 runExec = "./"
 checker = "checker"
-taskDir = "../task-"
+taskDir = "./task-"
 
 zipName = "VMChecker_Homework_2"
 

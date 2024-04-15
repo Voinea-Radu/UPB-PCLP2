@@ -19,4 +19,4 @@ checker: check_labyrinth.o  labyrinth.o
 
 clean:
 	rm -f checker
-	rm -f output/simple-*
+	rm -f output/labyrinth_*
