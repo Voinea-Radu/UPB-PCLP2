@@ -77,4 +77,4 @@ elif args.task != None:
     test_task(re.findall(r'\d', args.task)[0])
 
 
-print(f"====================== TOTAL {round(points)} / 100 ======================\n")
+print(f"====================== TOTAL: {round(points)} / 100 ======================\n")
