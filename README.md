@@ -1,5 +1,13 @@
 # Tema 2 - Intrusion Detection with Suricata
 
+**Responsabili**  
+Florin Postolache  
+Răzvan Vîrtan  
+Mircea Preoteasa  
+Rareș Constantin
+
+---
+
 Suricata Zoly a exagerat în ultimele săptămâni cu pasiunea ei pentru programarea funcțională.
 Ca urmare, a fost izolată de tribul ei și trebuie să își găsească o nouă casă alături de alte animale din habitat.
 Pentru a nu fi considerată însă un intrus în noile vizuini, fiecare tovarăș animal îi cere lui Zoly să rezolve anumite task-uri în limbaj de asamblare.
