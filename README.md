@@ -10,7 +10,7 @@ Sarcina voastră în cadrul acestei teme este să o ajutați pe Zoly să își g
 </div>
 
 **Zoly vă sfătuiește să rezolvați tema pe mașina virtuală de IOCLA.**
-**Dacă lucrați pe alt sistem (WSL, Linux nativ), vă sfătuiește să testați rezolvarea și pe VM-ul de IOCLA.** 
+**Dacă lucrați pe alt sistem (WSL, Linux nativ), vă sfătuiește să testați rezolvarea și pe VM-ul de IOCLA.**
 
 
 ## Task 1 - Permissions
@@ -29,12 +29,12 @@ Mușuroiul are 24 de săli, numerotate de la 1 la 24.
 Pentru a-i ușura treaba lui Zoly, furnica-arhitect i-a dat o listă în care se specifică sălile pe care fiecare furnică-angajat le poate rezerva.
 Lista este reprezentată de vectorul global de întregi `employee_permissions[]`, aflat în `constants.h`. Acesta poate fi accesat și din fișierul `check_permission.asm` cu ajutorul label-ului `employee_permissions`.
 Elementul de la poziția `i` reprezintă lista de săli pe care furnica cu id-ul `i` le poate accesa.
-Atunci când bitul `j` are valoarea `1` în elementul de la poziția `i`, furnica cu id-ul `i` poate accesa sala `j + 1`. 
+Atunci când bitul `j` are valoarea `1` în elementul de la poziția `i`, furnica cu id-ul `i` poate accesa sala `j + 1`.
 
 **Observație** Din moment ce avem doar 24 de săli, asta înseamnă că cei mai semnificativi 8 biți ai fiecărui element din `employee_permissions[]` vor fi mereu 0.
 
-Funcția pe care Zoly trebuie să o implementeze primește doi parametri. 
-Primul argument este un număr pe 32 de biți. 
+Funcția pe care Zoly trebuie să o implementeze primește doi parametri.
+Primul argument este un număr pe 32 de biți.
 Primii 8 cei mai semnificativi biți din cadrul numărului reprezintă identificatorul `i` al furnicii.
 Restul de 24 de biți au următoarea semnificație: bitul `j` ne spune dacă furnica `i` dorește să rezerve sala `j + 1`.
 O furnică poate cere să rezerve mai multe săli simultan.
@@ -186,7 +186,7 @@ criptării. Inițial, aceasta este primul byte al blocului de criptat.
 La fiecare rundă, pentru fiecare byte de pe poziția `i` din blocul de criptat:
 1. Se adună la variabila de stare byte-ul corespunzător din **cheia secretă**
 2. Se substituie variabila de stare cu corespondentul acesteia într-un [S-Box](https://en.wikipedia.org/wiki/S-box), definit în scheletul temei.
-3. Se adună **următorul** byte din bloc. Dacă vorbim de ultimul byte, atunci următorul byte va fi cel de pe poziția 0. 
+3. Se adună **următorul** byte din bloc. Dacă vorbim de ultimul byte, atunci următorul byte va fi cel de pe poziția 0.
 4. Variabila de stare suferă o rotație la stânga cu 1 bit.
 5. Byte-ul de pe poziția `(i + 1) % 8` din bloc va fi actualizat cu valoarea variabilei de stare.
 
@@ -327,6 +327,31 @@ Spre deosebire de un array bidimensional alocat static, în acest caz nu putem g
 Pentru mai multe detalii, puteți consulta și [această secțiune](https://github.com/systems-cs-pub-ro/iocla/tree/master/laborator/content/operatii-memorie-gdb#pointeri-la-tablouri) din laborator.
 
 <img title="Dynamic Array" alt="Dynamic Array" src="./src/images/dynamic_array.png">
+
+---
+
+## Checker
+
+Pentru a folosi checker-ul `local_checker.py` este necesar să aveți Python3 instalat și să rulați pentru a vedea lista de argumente:
+
+```bash
+    python3 local_checker.py --help
+```
+
+Pentru a rula toate testele:
+
+```bash
+    python3 local_checker.py --all
+```
+
+Pentru a face arhiva pe care trebuie să o încărcați pe Moodle:
+
+```bash
+    python3 local_checker.py --zip
+```
+
+Checker-ul nu va păstra output-urile voastre după rulare în mod normal, se va face clean.
+Pentru a păstra output-urile, adăugați argumentul `--no_clean`.
 
 ---
 

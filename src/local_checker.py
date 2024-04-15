@@ -13,6 +13,7 @@ group = argParser.add_mutually_exclusive_group()
 group.add_argument("-t", "--task", help="Run tests for a certain task.")
 group.add_argument("--all", action="store_true", help="Run all tasks.")
 group.add_argument("--zip", action="store_true", help="Make zip file for VMChecker")
+argParser.add_argument("--no_clean", action="store_false", help="Do not clean outputs after run")
 args = argParser.parse_args()
 
 if len(sys.argv) == 1:
@@ -56,12 +57,13 @@ def test_task(taskNo):
 
     points += float(taskScore)
 
-    rc = subprocess.call(f"make -C {taskString} clean > /dev/null 2> /dev/null", shell=useShell)
+    if args.no_clean:
+        rc = subprocess.call(f"make -C {taskString} clean > /dev/null 2> /dev/null", shell=useShell)
 
 #=======================================================================#
 
 if args.zip:
-    rc = subprocess.call(f"cd ..; zip -r {zipName} */*.asm", shell=useShell)
+    rc = subprocess.call(f"zip -r {zipName} */*.asm", shell=useShell)
     exit(rc)
 
 print("\n" + header)
