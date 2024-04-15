@@ -1,6 +1,6 @@
 %include "../include/io.mac"
 
-extern employee_permissions
+extern ant_permissions
 
 extern printf
 global check_permission

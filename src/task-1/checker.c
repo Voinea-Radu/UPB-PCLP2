@@ -15,7 +15,7 @@ unsigned int readInput(char *filename)
 
 	// read the rooms that he wants access to
 	while (fscanf(input, "%d\n", &room) != -1) 
-		input_number = input_number | (1 << (room - 1));
+		input_number = input_number | (1 << (room));
 	
     fclose(input);
 
