@@ -12,7 +12,7 @@ Sarcina voastră în cadrul acestei teme este să o ajutați pe Zoly să își g
 **Zoly vă sfătuiește să rezolvați tema pe mașina virtuală de PCLP2 / IOCLA.**
 **Dacă lucrați pe alt sistem (WSL, Linux nativ), vă sfătuiește să testați rezolvarea și pe VM-ul de PCLP2.**
 
-
+---
 ## Task 1 - Permissions (15p)
 
 Pentru a strânge niște bani de buzunar și de călătorie, Zoly a acceptat un job la negru de la vecinele sale furnicile.
@@ -47,7 +47,7 @@ O furnică poate cere să rezerve mai multe săli simultan.
 
 Funcția trebuie completată în cadrul fișierului `check_permission.asm`.
 
-
+---
 ## Task 2 - Requests (20p)
 
 Pentru a intra în tribul lui, ratonul inginer îi cere lui Zoly să implementeze un sistem de login.
