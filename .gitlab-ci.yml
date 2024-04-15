@@ -28,5 +28,4 @@ checker:
     image:
         name: gitlab.cs.pub.ro:5050/iocla/tema2-2024
     script:
-        - export
         - ./checker/checker.sh
