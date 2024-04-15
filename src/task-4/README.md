@@ -1,10 +1,10 @@
-## Task 4 - Labyrinth
+## Task 4 - Labyrinth (30p)
 Suricata Zoly a ajuns acum și la ultima încercare: labirintul pus în calea ei de către ursul Maloo(ma).
 Pentru a rezolva acest task, trebuie să o ajutați pe Zoly să găsească ieșirea din labirint,
 rezolvând infama problemă **BDLP** (Break Dynamic Labyrinth Problem).
 
 <div align="center">
-    <img title="IDS" alt="IDS" src="../images/bear.webp" width="300" height="300">
+    <img title="IDS" alt="IDS" src="./src/images/bear.webp" width="300" height="300">
 </div>
 
 Labirintul ursului Maloo(ma) are forma unui array bidimensional (o matrice) de caractere, alocat dinamic.
@@ -43,11 +43,11 @@ Semnificația argumentelor este:
 
 Codul vostru trebuie să rezolve labirintul și să salveze la adresa `out_line` index-ul liniei de ieșire, respectiv la adresa `out_col` index-ul coloanei de ieșire.
 
-**Puteți modifica conținutul (caracterele) din matricea `labyrinth`.**
+**HINT: Pentru a fi siguri că la niciun pas nu vă întoarceți în poziția precedentă (ceea ce vă poate aduce într-o buclă infinită), puteți marca mereu cu caracterul `1` poziția curentă înainte de a vă muta mai departe.**
 
 Mai jos avem câteva exemple de labirint și de rezolvare a acestuia.
 
-<img title="Labirinth Solved" alt="Labyrinth Solved" src="../images/labyrinth.png">
+<img title="Labirinth Solved" alt="Labyrinth Solved" src="./src/images/labyrinth.png">
 
 ### Indicație
 
@@ -55,12 +55,6 @@ O matrice alocată dinamic are forma din figura de mai jos.
 Spre deosebire de un array bidimensional alocat static, în acest caz nu putem garanta că liniile succesive din matrice vor fi plasate una în continuarea celeilalte în memorie, ci doar că fiecare linie este continuă în memorie.
 Pentru mai multe detalii, puteți consulta și [această secțiune](https://github.com/systems-cs-pub-ro/iocla/tree/master/laborator/content/operatii-memorie-gdb#pointeri-la-tablouri) din laborator.
 
-<img title="Dynamic Array" alt="Dynamic Array" src="../images/dynamic_array.png">
+<img title="Dynamic Array" alt="Dynamic Array" src="./src/images/dynamic_array.png">
 
 ---
-
-**Suricata Zoly vă mulțumește pentru ajutor și vă așteaptă și la tema 3 ;)**
-
-<div align="center">
-    <img title="IDS" alt="IDS" src="../images/smoking_suricata.png" width="300" height="300">
-</div>

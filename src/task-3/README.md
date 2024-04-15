@@ -1,11 +1,11 @@
-## Task 3
+## Task 3 - Treyfer (25p)
 
 Tot cutreierând pe la porțile diferitor animale, Suricata noastră a devenit îngrijorată că datele din valiza sa ar putea să fie furate în timp ce doarme.
 Din această cauză, ea dorește să cripteze tot ce deține folosind un [block cipher](https://en.wikipedia.org/wiki/Block_cipher),
 însă vrea ca acesta să fie cât mai simplu.
 
 <div align="center">
-    <img title="IDS" alt="IDS" src="../images/suricata_crypto.webp" width="300" height="300">
+    <img title="IDS" alt="IDS" src="./src/images/suricata_crypto.webp" width="300" height="300">
 </div>
 
 După mai multe nopți nedormite de gândire, aceasta se decide asupra cifrului [Treyfer](https://en.wikipedia.org/wiki/Treyfer), care pentru a cripta / decripta un bloc de dimensiune **block_size** de date funcționează conform algoritmului descris în continuare.
@@ -63,7 +63,7 @@ stare(t) = text[0]:     109
 4. Aplicăm o rotație la stânga pe `t`: `t = 22 <<< 1 = 44`
 5. Actualizăm byte-ul de pe poziția `(i + 1) % block_size = (1 + 1) % 2 = 0` cu valoarea lui `t`, ajungând la următoarea stare:
     ```
-    ascii: 44 237
+    ascii_text_criptat: 44 237
     stare (t): 44
     ```
 
@@ -88,8 +88,8 @@ ascii_cheie:                    100    97
 3. Rotim byte-ul următor din bloc (adică byte-ul 1) la dreapta: `237 >>> 1 = 246`, deci `bottom = 246`
 4. Calculăm rezultatul `bottom - top = 246 - 135 = 111` și actualizăm byte-ul de pe poziția 0, ajungând la starea inițială:
     ```
-    ascii:  109  111
-    text:   m    o
+    ascii_text_decriptat:  109  111
+    text_decriptat:         m    o
     ```
 
 Sarcina voastră este să o ajutați pe Zoly să implementeze metode de criptare și

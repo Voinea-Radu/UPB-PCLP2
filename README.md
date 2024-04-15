@@ -13,7 +13,7 @@ Sarcina voastră în cadrul acestei teme este să o ajutați pe Zoly să își g
 **Dacă lucrați pe alt sistem (WSL, Linux nativ), vă sfătuiește să testați rezolvarea și pe VM-ul de PCLP2.**
 
 
-## Task 1 - Permissions
+## Task 1 - Permissions (15p)
 
 Pentru a strânge niște bani de buzunar și de călătorie, Zoly a acceptat un job la negru de la vecinele sale furnicile.
 
@@ -48,7 +48,7 @@ O furnică poate cere să rezerve mai multe săli simultan.
 Funcția trebuie completată în cadrul fișierului `check_permission.asm`.
 
 
-## Task 2 - Requests
+## Task 2 - Requests (20p)
 
 Pentru a intra în tribul lui, ratonul inginer îi cere lui Zoly să implementeze un sistem de login.
 
@@ -71,7 +71,7 @@ Se dau structurile simplificate ale unui login request:
     };
 ```
 
-### Exercițiul 1
+### Exercițiul 1 (10p)
 
 Pentru această parte a task-ului, aveți de implementat funcția `sort_requests()` în fișierul *subtask1.asm*.
 Această funcție va simula sortarea tuturor request-urilor de login.
@@ -106,7 +106,7 @@ Semnificația argumentelor este:
 **Atenție!** Nu puteți folosi funcții externe pentru a sorta vectorul sau pentru a compara username-urile.
 
 
-### Exercițiul 2
+### Exercițiul 2 (10p)
 
 În continuarea exercițiului 1, acum trebuie să implementați funcția `check_passkeys()` în fișierul *subtask2.asm*.
 Această funcție va verifica dacă passkey-ul din interiorul request-ului este unul corect, care nu e asociat unui hacker.
@@ -148,7 +148,7 @@ trebuie să fie cea sortată.
 ---
 
 
-## Task 3
+## Task 3 - Treyfer (25p)
 
 Tot cutreierând pe la porțile diferitor animale, Suricata noastră a devenit îngrijorată că datele din valiza sa ar putea să fie furate în timp ce doarme.
 Din această cauză, ea dorește să cripteze tot ce deține folosind un [block cipher](https://en.wikipedia.org/wiki/Block_cipher),
@@ -213,7 +213,7 @@ stare(t) = text[0]:     109
 4. Aplicăm o rotație la stânga pe `t`: `t = 22 <<< 1 = 44`
 5. Actualizăm byte-ul de pe poziția `(i + 1) % block_size = (1 + 1) % 2 = 0` cu valoarea lui `t`, ajungând la următoarea stare:
     ```
-    ascii: 44 237
+    ascii_text_criptat: 44 237
     stare (t): 44
     ```
 
@@ -238,8 +238,8 @@ ascii_cheie:                    100    97
 3. Rotim byte-ul următor din bloc (adică byte-ul 1) la dreapta: `237 >>> 1 = 246`, deci `bottom = 246`
 4. Calculăm rezultatul `bottom - top = 246 - 135 = 111` și actualizăm byte-ul de pe poziția 0, ajungând la starea inițială:
     ```
-    ascii:  109  111
-    text:   m    o
+    ascii_text_decriptat:  109  111
+    text_decriptat:         m    o
     ```
 
 Sarcina voastră este să o ajutați pe Zoly să implementeze metode de criptare și
@@ -255,7 +255,8 @@ veți modifica în mod direct memoria din array-ul `text` dat ca parametru cu re
 
 ---
 
-## Task 4 - Labyrinth
+
+## Task 4 - Labyrinth (30p)
 Suricata Zoly a ajuns acum și la ultima încercare: labirintul pus în calea ei de către ursul Maloo(ma).
 Pentru a rezolva acest task, trebuie să o ajutați pe Zoly să găsească ieșirea din labirint,
 rezolvând infama problemă **BDLP** (Break Dynamic Labyrinth Problem).
@@ -300,7 +301,7 @@ Semnificația argumentelor este:
 
 Codul vostru trebuie să rezolve labirintul și să salveze la adresa `out_line` index-ul liniei de ieșire, respectiv la adresa `out_col` index-ul coloanei de ieșire.
 
-**Puteți modifica conținutul (caracterele) din matricea `labyrinth`.**
+**HINT: Pentru a fi siguri că la niciun pas nu vă întoarceți în poziția precedentă (ceea ce vă poate aduce într-o buclă infinită), puteți marca mereu cu caracterul `1` poziția curentă înainte de a vă muta mai departe.**
 
 Mai jos avem câteva exemple de labirint și de rezolvare a acestuia.
 
@@ -316,9 +317,27 @@ Pentru mai multe detalii, puteți consulta și [această secțiune](https://gith
 
 ---
 
+## Coding Style & README (10p)
+
+Pentru că este o suricată elegantă, Zoly are nevoie de un cod assembly ordonat și inteligibil, care să respecte câteva reguli de good practice:
+
+- scrierea unui cod lizibil
+- indentarea consecventă (recomandarea este label-uri la început de linie, instrucțiuni indentate la un tab)
+- utilizarea unor nume sugestive pentru label-uri
+- prezența comentariilor **relevante și necesare** în cod
+- scrierea unor linii de cod (sau README) de maxim 80-100 de caractere
+
+De asemenea, va trebui să includeți o scurtă explicație a rezolvării fiecărui task într-un fișier README.
+
+**Punctajul pe coding style și README nu este inclus în checker și va fi acordat la corectare.**
+
+---
+
 ## Checker
 
-Pentru a folosi checker-ul `local_checker.py` este necesar să aveți Python3 instalat și să rulați pentru a vedea lista de argumente:
+Pentru a folosi checker-ul `local_checker.py`, este necesar să aveți Python3 instalat.
+
+Pentru a vedea lista de argumente posibile a script-ului:
 
 ```bash
     python3 local_checker.py --help
@@ -330,14 +349,14 @@ Pentru a rula toate testele:
     python3 local_checker.py --all
 ```
 
-Pentru a face arhiva pe care trebuie să o încărcați pe Moodle:
+Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle:
 
 ```bash
     python3 local_checker.py --zip
 ```
 
-Checker-ul nu va păstra output-urile voastre după rulare în mod normal, se va face clean.
-Pentru a păstra output-urile, adăugați argumentul `--no_clean`.
+La o rulare normală, checker-ul nu va păstra output-urile voastre, ci va face clean.
+Pentru a păstra output-urile, adăugați argumentul `--no_clean` la comanda de rulare a checker-ului.
 
 ---
 

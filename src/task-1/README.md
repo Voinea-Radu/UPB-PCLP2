@@ -1,9 +1,9 @@
-## Task 1 - Permissions
+## Task 1 - Permissions (15p)
 
 Pentru a strânge niște bani de buzunar și de călătorie, Zoly a acceptat un job la negru de la vecinele sale furnicile.
 
 <div align="center">
-    <img title="IDS" alt="IDS" src="../images/suricata-task-1.webp" width="300" height="300">
+    <img title="IDS" alt="IDS" src="./src/images/suricata-task-1.webp" width="300" height="300">
 </div>
 
 Job-ul constă în crearea unei funcții care verifică dacă o anumită furnică are voie să rezerve sălile pe care le dorește din mușuroi.
