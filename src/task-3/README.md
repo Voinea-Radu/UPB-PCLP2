@@ -5,7 +5,7 @@ Din această cauză, ea dorește să cripteze tot ce deține folosind un [block 
 însă vrea ca acesta să fie cât mai simplu.
 
 <div align="center">
-    <img title="IDS" alt="IDS" src="./src/images/suricata_crypto.webp" width="300" height="300">
+    <img title="IDS" alt="IDS" src="../images/suricata_crypto.webp" width="300" height="300">
 </div>
 
 După mai multe nopți nedormite de gândire, aceasta se decide asupra cifrului [Treyfer](https://en.wikipedia.org/wiki/Treyfer), care pentru a cripta / decripta un bloc de dimensiune **block_size** de date funcționează conform algoritmului descris în continuare.

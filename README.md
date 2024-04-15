@@ -50,12 +50,16 @@ void check_permission(unsigned int n, unsigned int* res);
 Primii 8 cei mai semnificativi biți din cadrul numărului reprezintă identificatorul `i` al furnicii.
 Restul de 24 de biți au următoarea semnificație: bitul `j` ne spune dacă furnica `i` dorește să rezerve sala `j`.
 O furnică poate cere să rezerve mai multe săli simultan.
+Figura de mai jos ilustrează formatul acestui argument.
+
+<div align="center">
+    <img title="IDS" alt="IDS" src="./src/images/Schema_task1.png">
+</div>
+
 
 **Al doilea argument** (`res`) reprezintă adresa de memorie la care funcția trebuie să scrie rezultatul verificării. Dacă furnica cu identificatorul `i` poate rezerva toate sălile dorite, valoarea `1` trebuie scrisă la adresa `res`. Dacă furnica nu poate rezerva una sau mai multe din sălile dorite, valoarea `0` trebuie scrisă la adresa `res`.
 
 Funcția trebuie completată în cadrul fișierului `check_permission.asm`.
-
----
 ## Task 2 - Requests (20p)
 
 Pentru a intra în tribul lui, ratonul inginer îi cere lui Zoly să implementeze un sistem de login.

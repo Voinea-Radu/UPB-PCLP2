@@ -4,7 +4,7 @@ Pentru a rezolva acest task, trebuie să o ajutați pe Zoly să găsească ieși
 rezolvând infama problemă **BDLP** (Break Dynamic Labyrinth Problem).
 
 <div align="center">
-    <img title="IDS" alt="IDS" src="./src/images/bear.webp" width="300" height="300">
+    <img title="IDS" alt="IDS" src="../images/bear.webp" width="300" height="300">
 </div>
 
 Labirintul ursului Maloo(ma) are forma unui array bidimensional (o matrice) de caractere, alocat dinamic.
