@@ -47,7 +47,7 @@ Codul vostru trebuie să rezolve labirintul și să salveze la adresa `out_line`
 
 Mai jos avem câteva exemple de labirint și de rezolvare a acestuia.
 
-<img title="Labirinth Solved" alt="Labyrinth Solved" src="./src/images/labyrinth.png">
+<img title="Labirinth Solved" alt="Labyrinth Solved" src="../images/labyrinth.png">
 
 ### Indicație
 
@@ -55,6 +55,6 @@ O matrice alocată dinamic are forma din figura de mai jos.
 Spre deosebire de un array bidimensional alocat static, în acest caz nu putem garanta că liniile succesive din matrice vor fi plasate una în continuarea celeilalte în memorie, ci doar că fiecare linie este continuă în memorie.
 Pentru mai multe detalii, puteți consulta și [această secțiune](https://github.com/systems-cs-pub-ro/iocla/tree/master/laborator/content/operatii-memorie-gdb#pointeri-la-tablouri) din laborator.
 
-<img title="Dynamic Array" alt="Dynamic Array" src="./src/images/dynamic_array.png">
+<img title="Dynamic Array" alt="Dynamic Array" src="../images/dynamic_array.png">
 
 ---
