@@ -11,15 +11,17 @@ section .data
     requests dd 0
     requests_length dd 0
 
-    is_admin_1 db 0
+    admin_1 db 0
     priority_1 db 0
     passkey_1 dw 0
     username_1 times 51 db 0
 
-    is_admin_2 db 0
+    admin_2 db 0
     priority_2 db 0
     passkey_2 dw 0
     username_2 times 51 db 0
+
+    username_tmp times 51 db 0
 
 section .text
     global sort_requests
@@ -50,19 +52,16 @@ sort_requests:
             imul ebx, [struct_size]
 
             mov eax, [requests]
-            mov eax, [eax + ebx]
-            and eax, 0xFF
-            mov [is_admin_1], eax
+            mov al, [eax + ebx]
+            mov [admin_1], al
 
             mov eax, [requests]
-            mov eax, [eax + ebx + 1]
-            and eax, 0xFF
-            mov [priority_1], eax
+            mov al, [eax + ebx + 1]
+            mov [priority_1], al
 
             mov eax, [requests]
-            mov eax, [eax + ebx + 2]
-            and eax, 0xFFFF
-            mov [passkey_1], eax
+            mov ax, [eax + ebx + 2]
+            mov [passkey_1], ax
 
             mov DWORD [loop_index_3], 0
             loop_3_1:
@@ -70,9 +69,8 @@ sort_requests:
 
                 mov eax, [requests]
                 add eax, ebx
-                mov eax, [eax + ecx + 4]
-                and eax, 0xFF
-                mov [username_1 + ecx], eax
+                mov al, [eax + ecx + 4]
+                mov [username_1 + ecx], al
 
                 inc dword [loop_index_3]
                 cmp dword [loop_index_3], 50
@@ -80,10 +78,10 @@ sort_requests:
 
             mov byte[username_1 + 51], 0
 
-            PRINTF32 `[1] Is admin? %hhd\n\x0`, [is_admin_1]
-            PRINTF32 `[1] Priority: %hhu\n\x0`, [priority_1]
-            PRINTF32 `[1] Passkey: %hu\n\x0`, [passkey_1]
-            PRINTF32 `[1] Usename: %s\n\x0`, username_1
+            PRINTF32 `[BEFORE 1] Is admin? %hhd\n\x0`, [admin_1]
+            PRINTF32 `[BEFORE 1] Priority: %hhu\n\x0`, [priority_1]
+            PRINTF32 `[BEFORE 1] Passkey: %hu\n\x0`, [passkey_1]
+            PRINTF32 `[BEFORE 1] Usename: %s\n\x0`, username_1
             PRINTF32 `\nVS\n\n\x0`
 
 
@@ -92,19 +90,16 @@ sort_requests:
             imul ebx, [struct_size]
 
             mov eax, [requests]
-            mov eax, [eax + ebx]
-            and eax, 0xFF
-            mov [is_admin_2], eax
+            mov al, [eax + ebx]
+            mov [admin_2], al
 
             mov eax, [requests]
-            mov eax, [eax + ebx + 1]
-            and eax, 0xFF
-            mov [priority_2], eax
+            mov al, [eax + ebx + 1]
+            mov [priority_2], al
 
             mov eax, [requests]
-            mov eax, [eax + ebx + 2]
-            and eax, 0xFFFF
-            mov [passkey_2], eax
+            mov ax, [eax + ebx + 2]
+            mov [passkey_2], ax
 
             mov DWORD [loop_index_3], 0
             loop_3_2:
@@ -112,9 +107,8 @@ sort_requests:
 
                 mov eax, [requests]
                 add eax, ebx
-                mov eax, [eax + ecx + 4]
-                and eax, 0xFF
-                mov [username_2 + ecx], eax
+                mov al, [eax + ecx + 4]
+                mov [username_2 + ecx], al
 
                 inc dword [loop_index_3]
                 cmp dword [loop_index_3], 50
@@ -122,13 +116,168 @@ sort_requests:
 
             mov byte[username_2 + 51], 0
 
-            PRINTF32 `[2] Is admin? %hhd\n\x0`, [is_admin_2]
-            PRINTF32 `[2] Priority: %hhu\n\x0`, [priority_2]
-            PRINTF32 `[2] Passkey: %hu\n\x0`, [passkey_2]
-            PRINTF32 `[2] Usename: %s\n\x0`, username_2
+            PRINTF32 `[BEFORE 2] Is admin? %hhd\n\x0`, [admin_2]
+            PRINTF32 `[BEFORE 2] Priority: %hhu\n\x0`, [priority_2]
+            PRINTF32 `[BEFORE 2] Passkey: %hu\n\x0`, [passkey_2]
+            PRINTF32 `[BEFORE 2] Usename: %s\n\x0`, username_2
+
             PRINTF32 `\n\n\n\n\x0`
 
-            ;; Compare the requests
+            ;; Compare the requests' admin status
+            mov al, BYTE [admin_1]
+            cmp al, BYTE [admin_2]
+
+            jl admin_1_lower
+            jg admin_1_greater
+            jmp compare_admin_end
+
+            admin_1_lower:
+                ;; sawp the requests
+                PRINTF32 `SWAP FOR ADMIN\n\n\n\x0`
+
+                ;; sawp admin
+                mov al, [admin_1]
+                mov bl, [admin_2]
+                mov [admin_1], bl
+                mov [admin_2], al
+
+                ;; sawp priority
+                mov al, [priority_1]
+                mov bl, [priority_2]
+                mov [priority_1], bl
+                mov [priority_2], al
+
+                ;; sawp passkey
+                mov ax, [passkey_1]
+                mov bx, [passkey_2]
+                mov [passkey_1], bx
+                mov [passkey_2], ax
+
+                ;; sawp username
+                mov DWORD [loop_index_3], 0
+                loop_3_3:
+                    mov eax, [loop_index_3]
+                    mov bl, [username_1 + eax]
+                    mov [username_tmp + eax], bl
+
+                    inc dword [loop_index_3]
+                    cmp dword [loop_index_3], 50
+                    jl loop_3_3
+
+                mov DWORD [loop_index_3], 0
+                loop_3_4:
+                    mov eax, [loop_index_3]
+                    mov bl, [username_2 + eax]
+                    mov [username_1 + eax], bl
+
+                    inc dword [loop_index_3]
+                    cmp dword [loop_index_3], 50
+                    jl loop_3_4
+
+                mov DWORD [loop_index_3], 0
+                loop_3_5:
+                    mov eax, [loop_index_3]
+                    mov bl, [username_tmp + eax]
+                    mov [username_2 + eax], bl
+
+                    inc dword [loop_index_3]
+                    cmp dword [loop_index_3], 50
+                    jl loop_3_5
+
+                PRINTF32 `[AFTER 1] Is admin? %hhd\n\x0`, [admin_1]
+                PRINTF32 `[AFTER 1] Priority: %hhu\n\x0`, [priority_1]
+                PRINTF32 `[AFTER 1] Passkey: %hu\n\x0`, [passkey_1]
+                PRINTF32 `[AFTER 1] Usename: %s\n\x0`, username_1
+                PRINTF32 `\nVS\n\n\x0`
+
+                PRINTF32 `[AFTER 2] Is admin? %hhd\n\x0`, [admin_2]
+                PRINTF32 `[AFTER 2] Priority: %hhu\n\x0`, [priority_2]
+                PRINTF32 `[AFTER 2] Passkey: %hu\n\x0`, [passkey_2]
+                PRINTF32 `[AFTER 2] Usename: %s\n\x0`, username_2
+                PRINTF32 `\n\n\n\n\x0`
+
+                jmp compare_admin_end
+            admin_1_greater:
+                ;; Compare the requests' priorities
+                mov al, BYTE [priority_1]
+                cmp al, BYTE [priority_2]
+
+                jl priority_1_lower
+                jg priority_1_greater
+                jmp compare_admin_end
+                priority_1_lower:
+                    ;; sawp the requests
+                    PRINTF32 `SWAP FOR PRIORITY\n\n\n\x0`
+
+                    ;; sawp admin
+                    mov al, [admin_1]
+                    mov bl, [admin_2]
+                    mov [admin_1], bl
+                    mov [admin_2], al
+
+                    ;; sawp priority
+                    mov al, [priority_1]
+                    mov bl, [priority_2]
+                    mov [priority_1], bl
+                    mov [priority_2], al
+
+                    ;; sawp passkey
+                    mov ax, [passkey_1]
+                    mov bx, [passkey_2]
+                    mov [passkey_1], bx
+                    mov [passkey_2], ax
+
+                    ;; sawp username
+                    mov DWORD [loop_index_3], 0
+                    loop_3_6:
+                        mov eax, [loop_index_3]
+                        mov bl, [username_1 + eax]
+                        mov [username_tmp + eax], bl
+
+                        inc dword [loop_index_3]
+                        cmp dword [loop_index_3], 50
+                        jl loop_3_6
+
+                    mov DWORD [loop_index_3], 0
+                    loop_3_7:
+                        mov eax, [loop_index_3]
+                        mov bl, [username_2 + eax]
+                        mov [username_1 + eax], bl
+
+                        inc dword [loop_index_3]
+                        cmp dword [loop_index_3], 50
+                        jl loop_3_7
+
+                    mov DWORD [loop_index_3], 0
+                    loop_3_8:
+                        mov eax, [loop_index_3]
+                        mov bl, [username_tmp + eax]
+                        mov [username_2 + eax], bl
+
+                        inc dword [loop_index_3]
+                        cmp dword [loop_index_3], 50
+                        jl loop_3_8
+
+                    PRINTF32 `[AFTER 1] Is admin? %hhd\n\x0`, [admin_1]
+                    PRINTF32 `[AFTER 1] Priority: %hhu\n\x0`, [priority_1]
+                    PRINTF32 `[AFTER 1] Passkey: %hu\n\x0`, [passkey_1]
+                    PRINTF32 `[AFTER 1] Usename: %s\n\x0`, username_1
+                    PRINTF32 `\nVS\n\n\x0`
+
+                    PRINTF32 `[AFTER 2] Is admin? %hhd\n\x0`, [admin_2]
+                    PRINTF32 `[AFTER 2] Priority: %hhu\n\x0`, [priority_2]
+                    PRINTF32 `[AFTER 2] Passkey: %hu\n\x0`, [passkey_2]
+                    PRINTF32 `[AFTER 2] Usename: %s\n\x0`, username_2
+                    PRINTF32 `\n\n\n\n\x0`
+
+
+
+                    jmp compare_admin_end
+                priority_1_greater:
+                    jmp compare_admin_end
+
+                jmp compare_admin_end
+            compare_admin_end:
 
 
 
