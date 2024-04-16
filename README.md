@@ -1,9 +1,9 @@
 # Tema 2 - Intrusion Detection with Suricata
 
-**Responsabili**  
-Florin Postolache  
-Răzvan Vîrtan  
-Mircea Preoteasa  
+**Responsabili**
+Florin Postolache
+Răzvan Vîrtan
+Mircea Preoteasa
 Rareș Constantin
 
 ---
@@ -361,7 +361,7 @@ Pentru a rula toate testele:
     python3 local_checker.py --all
 ```
 
-Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle:
+Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle (**nu include README**):
 
 ```bash
     python3 local_checker.py --zip
