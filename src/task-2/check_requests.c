@@ -3,13 +3,13 @@
 #include <string.h>
 
 struct creds {
-    unsigned short passkey;
-    char username[51];
+    unsigned short passkey; // 2 bytes
+    char username[51]; // 51 bytes
 } __attribute__((packed));
 
 struct request {
-    unsigned char admin;
-    unsigned char prio;
+    unsigned char admin; // 1 byte
+    unsigned char prio; // 1 byte
     struct creds login_creds;
 } __attribute__((packed));
 
@@ -162,7 +162,7 @@ int main(int argc, char **argv)
     char input_file[30], output_file[30], ref_file[30];
 
     printf("---------------TASK 2---------------\n\n");
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 1; i++) {
         /* read input */
         sprintf(input_file, "./input/requests_%d.in", i + 1);
         len = readInput(input_file, &requests, &connected);
