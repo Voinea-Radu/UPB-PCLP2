@@ -106,25 +106,7 @@ sort_requests:
                 cmp dword [loop_index_3], username_length
                 jl loop_3_2
 
-            ;; DEBUG ;; TODO Delete
-
-            ; PRINTF32 `Before\n\x0`
-            ; PRINTF32 `Is admin? %hhd\n\x0`, [admin_1]
-            ; PRINTF32 `Priority: %hhu\n\x0`, [priority_1]
-            ; PRINTF32 `Passkey: %hu\n\x0`, [passkey_1]
-            ; PRINTF32 `Usename: %s\n\x0`, username_1
-            ; PRINTF32 `\nVS\n\n\x0`
-
-            ; PRINTF32 `Is admin? %hhd\n\x0`, [admin_2]
-            ; PRINTF32 `Priority: %hhu\n\x0`, [priority_2]
-            ; PRINTF32 `Passkey: %hu\n\x0`, [passkey_2]
-            ; PRINTF32 `Usename: %s\n\x0`, username_2
-
-            ; PRINTF32 `\n\n\n\n\x0`
-
             ;; Compare the requests' admin status
-            ; PRINTF32 `Comapring {%d} with \x0`, [loop_index_1]
-            ; PRINTF32 `{%d}\n\x0`, [loop_index_2]
 
             mov al, BYTE [admin_1]
             cmp al, BYTE [admin_2]
@@ -136,10 +118,8 @@ sort_requests:
             jmp compare_end
 
             admin_1_lower: ; admin1 < admin2
-                ; PRINTF32 `admin_1 < admin_2. Swapping...\n\x0`
                 jmp swap_requests
             admin_1_equal: ; admin1 == admin2
-                ; PRINTF32 `admin_1 == admin_2. Correct order. Checking for priority\n\x0`
                 ;; Compare the requests' priorities
                 mov al, BYTE [priority_1]
                 cmp al, BYTE [priority_2]
@@ -150,8 +130,6 @@ sort_requests:
                 jmp compare_end
 
                 priority_1_equal: ; priority1 == priority2
-                    ; PRINTF32 `priority_1 == priority_2. Correct. Check for username\n\x0`
-
                     ;; Comparing the requests' usernames
                     mov DWORD [loop_index_3], 0
                     loop_3_9:
@@ -165,13 +143,10 @@ sort_requests:
                         jmp loop_3_9_continue
 
                         username_1_lower: ; username1 < username2
-                            ; PRINTF32 `username_1 < username_2. Correct order. Nothing to do\n\x0`
                             jmp compare_end
                         username_1_greater: ; username1 > username2
-                            ; PRINTF32 `username_1 > username_2. Swapping...\n\x0`
                             jmp swap_requests
                         username_1_equal: ; username1 == username2
-                            ; PRINTF32 `username_1 == username_2. Correct order. Nothing to do\n\x0`
                             jmp loop_3_9_continue
 
                         loop_3_9_continue:
@@ -182,21 +157,14 @@ sort_requests:
 
                     jmp compare_end
                 priority_1_lower: ; priority1 < priority2
-                    ; PRINTF32 `priority_1 < priority_2. Correct. Nothing to do\n\x0`
                     jmp compare_end
                 priority_1_greater: ; priority1 > priority2
-                    ; PRINTF32 `priority_1 > priority_2. Swapping...\n\x0`
-                    ; PRINTF32 `SWAP FOR PRIORITY\n\x0`
                     jmp swap_requests
                 jmp compare_end
             admin_1_greater: ; admin1 > admin2
-                ; PRINTF32 `admin_1 > admin_2. Correct order. Nothing to do\n\x0`
                 jmp compare_end
 
             swap_requests:
-                ; PRINTF32 `Swaping {%d} with \x0`, [loop_index_1]
-                ; PRINTF32 `{%d}\n\x0`, [loop_index_2]
-
                 ;; sawp admin
                 mov al, [admin_1]
                 mov bl, [admin_2]
@@ -246,20 +214,6 @@ sort_requests:
                     cmp dword [loop_index_3], username_length
                     jl loop_3_5
 
-                ;; DEBUG ;; TODO Delete
-                ; PRINTF32 `After\n\x0`
-                ; PRINTF32 `Is admin? %hhd\n\x0`, [admin_1]
-                ; PRINTF32 `Priority: %hhu\n\x0`, [priority_1]
-                ; PRINTF32 `Passkey: %hu\n\x0`, [passkey_1]
-                ; PRINTF32 `Usename: %s\n\x0`, username_1
-                ; PRINTF32 `\nVS\n\n\x0`
-
-                ; PRINTF32 `Is admin? %hhd\n\x0`, [admin_2]
-                ; PRINTF32 `Priority: %hhu\n\x0`, [priority_2]
-                ; PRINTF32 `Passkey: %hu\n\x0`, [passkey_2]
-                ; PRINTF32 `Usename: %s\n\x0`, username_2
-                ; PRINTF32 `\n\n\n\n\x0`
-
                 ;; Copy request 1 to the main array
                 mov eax, [requests]
 
@@ -283,7 +237,6 @@ sort_requests:
                     inc dword [loop_index_3]
                     cmp dword [loop_index_3], username_length
                     jl loop_3_6
-
 
                 ;; Copy request 2 to the main array
                 mov eax, [requests]
@@ -311,9 +264,6 @@ sort_requests:
 
                 mov eax, [requests]
                 mov ebx , [loop_index_1]
-
-                ;; DEBUG ;; TODO Delete
-                ; call debug_print
 
                 jmp compare_end
             compare_end:
