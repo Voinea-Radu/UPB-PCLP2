@@ -1,9 +1,9 @@
 %include "../include/io.mac"
 
-section .data
-    struct_size dd 55
+%define username_length 50
+%define struct_size 55
 
-    username_length dd 50
+section .data
 
     loop_index_1 dd 0
     loop_index_2 dd 0
@@ -35,8 +35,6 @@ sort_requests:
     mov ecx, [ebp + 12]     ; length
 
     ;; Init variables
-    mov DWORD [username_length], 50
-
     mov DWORD [requests], 0
     mov DWORD [requests_length], 0
 
@@ -49,7 +47,7 @@ sort_requests:
         loop_2:
             ;; Read the request with index loop_index_1
             mov ebx, [loop_index_1]
-            imul ebx, [struct_size]
+            imul ebx, struct_size
 
             mov eax, [requests]
             mov al, [eax + ebx]
@@ -73,21 +71,12 @@ sort_requests:
                 mov [username_1 + ecx], al
 
                 inc dword [loop_index_3]
-                cmp dword [loop_index_3], 50
+                cmp dword [loop_index_3], username_length
                 jl loop_3_1
-
-            mov byte[username_1 + 51], 0
-
-            PRINTF32 `[BEFORE 1] Is admin? %hhd\n\x0`, [admin_1]
-            PRINTF32 `[BEFORE 1] Priority: %hhu\n\x0`, [priority_1]
-            PRINTF32 `[BEFORE 1] Passkey: %hu\n\x0`, [passkey_1]
-            PRINTF32 `[BEFORE 1] Usename: %s\n\x0`, username_1
-            PRINTF32 `\nVS\n\n\x0`
-
 
             ;; Read the request with index loop_index_2
             mov ebx, [loop_index_2]
-            imul ebx, [struct_size]
+            imul ebx, struct_size
 
             mov eax, [requests]
             mov al, [eax + ebx]
@@ -111,10 +100,16 @@ sort_requests:
                 mov [username_2 + ecx], al
 
                 inc dword [loop_index_3]
-                cmp dword [loop_index_3], 50
+                cmp dword [loop_index_3], username_length
                 jl loop_3_2
 
-            mov byte[username_2 + 51], 0
+            ;; DEBUG ;; TODO Delete
+
+            PRINTF32 `[BEFORE 1] Is admin? %hhd\n\x0`, [admin_1]
+            PRINTF32 `[BEFORE 1] Priority: %hhu\n\x0`, [priority_1]
+            PRINTF32 `[BEFORE 1] Passkey: %hu\n\x0`, [passkey_1]
+            PRINTF32 `[BEFORE 1] Usename: %s\n\x0`, username_1
+            PRINTF32 `\nVS\n\n\x0`
 
             PRINTF32 `[BEFORE 2] Is admin? %hhd\n\x0`, [admin_2]
             PRINTF32 `[BEFORE 2] Priority: %hhu\n\x0`, [priority_2]
@@ -129,7 +124,7 @@ sort_requests:
 
             jl admin_1_lower
             jg admin_1_greater
-            jmp compare_admin_end
+            jmp compare_end
 
             admin_1_lower:
                 PRINTF32 `SWAP FOR ADMIN STATUS\n\n\n\x0`
@@ -141,15 +136,15 @@ sort_requests:
 
                 jl priority_1_lower
                 jg priority_1_greater
-                jmp compare_admin_end
+                jmp compare_end
 
                 priority_1_lower:
                     PRINTF32 `SWAP FOR PRIORITY\n\n\n\x0`
                     jmp swap_requests
                 priority_1_greater:
-                    jmp compare_admin_end
+                    jmp compare_end
 
-                jmp compare_admin_end
+                jmp compare_end
             swap_requests:
 
                 ;; sawp admin
@@ -178,7 +173,7 @@ sort_requests:
                     mov [username_tmp + eax], bl
 
                     inc dword [loop_index_3]
-                    cmp dword [loop_index_3], 50
+                    cmp dword [loop_index_3], username_length
                     jl loop_3_6
 
                 mov DWORD [loop_index_3], 0
@@ -188,7 +183,7 @@ sort_requests:
                     mov [username_1 + eax], bl
 
                     inc dword [loop_index_3]
-                    cmp dword [loop_index_3], 50
+                    cmp dword [loop_index_3], username_length
                     jl loop_3_7
 
                 mov DWORD [loop_index_3], 0
@@ -198,9 +193,10 @@ sort_requests:
                     mov [username_2 + eax], bl
 
                     inc dword [loop_index_3]
-                    cmp dword [loop_index_3], 50
+                    cmp dword [loop_index_3], username_length
                     jl loop_3_8
 
+                ;; DEBUG ;; TODO Delete
                 PRINTF32 `[AFTER 1] Is admin? %hhd\n\x0`, [admin_1]
                 PRINTF32 `[AFTER 1] Priority: %hhu\n\x0`, [priority_1]
                 PRINTF32 `[AFTER 1] Passkey: %hu\n\x0`, [passkey_1]
@@ -213,10 +209,10 @@ sort_requests:
                 PRINTF32 `[AFTER 2] Usename: %s\n\x0`, username_2
                 PRINTF32 `\n\n\n\n\x0`
 
-                jmp compare_admin_end
-            compare_admin_end:
 
 
+                jmp compare_end
+            compare_end:
 
             inc dword [loop_index_2]
             mov ebx, [requests_length]
