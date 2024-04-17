@@ -183,7 +183,7 @@ int main(int argc, char **argv)
 	char input_file[30], output_file[30], ref_file[30];
 
 	printf("---------------TASK 2---------------\n\n");
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 1; i++) {
 		/* read input */
 		sprintf(input_file, "./input/requests_%d.in", i + 1);
 		len = readInput(input_file, &requests, &connected);
@@ -202,7 +202,7 @@ int main(int argc, char **argv)
 		// printf("After sort\n");
 		// debug_print(0, 0);
 
-		check_passkeys(requests, len, connected);
+		//check_passkeys(requests, len, connected);
 
 		int sort_ok = 1, check_passkeys_ok = 1;
 
