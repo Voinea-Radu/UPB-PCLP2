@@ -253,6 +253,25 @@ compare_username: ; ()
     leave
     ret
 
+move_username: ;; (source, target)
+    enter 0,0
+    pusha
+
+    mov ecx, [ebp + 8]   ; source
+    mov edx, [ebp + 12]  ; target
+
+    mov eax, 0
+    loop_3_1:
+        mov bl, [ecx + eax]
+        mov [edx + eax], bl
+
+        inc eax
+        cmp eax, username_length
+        jl loop_3_1
+
+    popa
+    leave
+    ret
 
 ;;;
 ;;; Requires the following variables to be defined:
@@ -281,36 +300,21 @@ swap_requests:
     mov [passkey_1], bx
     mov [passkey_2], ax
 
-    ;; sawp username
-    mov DWORD [loop_index_3], 0
-    loop_3_3:
-        mov eax, [loop_index_3]
-        mov bl, [username_1 + eax]
-        mov [username_tmp + eax], bl
+    push username_tmp
+    push username_1
+    call move_username
+    add esp, 8
 
-        inc dword [loop_index_3]
-        cmp dword [loop_index_3], username_length
-        jl loop_3_3
+    push username_1
+    push username_2
+    call move_username
+    add esp, 8
 
-    mov DWORD [loop_index_3], 0
-    loop_3_4:
-        mov eax, [loop_index_3]
-        mov bl, [username_2 + eax]
-        mov [username_1 + eax], bl
+    push username_2
+    push username_tmp
+    call move_username
+    add esp, 8
 
-        inc dword [loop_index_3]
-        cmp dword [loop_index_3], username_length
-        jl loop_3_4
-
-    mov DWORD [loop_index_3], 0
-    loop_3_5:
-        mov eax, [loop_index_3]
-        mov bl, [username_tmp + eax]
-        mov [username_2 + eax], bl
-
-        inc dword [loop_index_3]
-        cmp dword [loop_index_3], username_length
-        jl loop_3_5
 
 
     mov eax, [requests]
@@ -321,8 +325,10 @@ swap_requests:
 
     mov cl, [admin_1]
     mov [eax], cl
+
     mov cl, [priority_1]
     mov [eax + 1], cl
+
     mov cx, [passkey_1]
     mov [eax + 2], cx
 
