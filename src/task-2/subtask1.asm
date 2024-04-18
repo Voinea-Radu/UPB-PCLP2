@@ -207,7 +207,7 @@ compare_admin: ; ()
 ;;; Requires the following variables to be defined:
 ;;;     priority_1, priority_2
 ;;;
-comapre_priority: ; ()
+compare_priority: ; ()
     enter 0,0
     pusha
 
@@ -282,44 +282,32 @@ swap_requests:
     enter 0,0
     pusha
 
-    ;; sawp admin
-    mov al, [admin_1]
-    mov bl, [admin_2]
-    mov [admin_1], bl
-    mov [admin_2], al
-
-    ;; sawp priority
-    mov al, [priority_1]
-    mov bl, [priority_2]
-    mov [priority_1], bl
-    mov [priority_2], al
-
-    ;; sawp passkey
-    mov ax, [passkey_1]
-    mov bx, [passkey_2]
-    mov [passkey_1], bx
-    mov [passkey_2], ax
-
-    push username_tmp
-    push username_1
-    call move_username
-    add esp, 8
-
-    push username_1
-    push username_2
-    call move_username
-    add esp, 8
-
-    push username_2
-    push username_tmp
-    call move_username
-    add esp, 8
-
-
-
+    ;; Copy request 2 to the main array at index 1
     mov eax, [requests]
 
     mov ebx, [loop_index_1]
+    imul ebx, struct_size
+    add eax, ebx
+
+    mov cl, [admin_2]
+    mov [eax], cl
+
+    mov cl, [priority_2]
+    mov [eax + 1], cl
+
+    mov cx, [passkey_2]
+    mov [eax + 2], cx
+
+    add eax, 4
+    push eax
+    push username_2
+    call move_username
+    add esp, 8
+
+    ;; Copy request 1 to the main array at index 2
+    mov eax, [requests]
+
+    mov ebx, [loop_index_2]
     imul ebx, struct_size
     add eax, ebx
 
@@ -332,42 +320,11 @@ swap_requests:
     mov cx, [passkey_1]
     mov [eax + 2], cx
 
-    mov DWORD [loop_index_3], 0
-    loop_3_6:
-        mov ebx, [loop_index_3]
-        mov cl, [username_1 + ebx]
-        mov [eax + ebx + 4], cl
-
-        inc dword [loop_index_3]
-        cmp dword [loop_index_3], username_length
-        jl loop_3_6
-
-    ;; Copy request 2 to the main array
-    mov eax, [requests]
-
-    mov ebx, [loop_index_2]
-    imul ebx, struct_size
-    add eax, ebx
-
-    mov cl, [admin_2]
-    mov [eax], cl
-    mov cl, [priority_2]
-    mov [eax + 1], cl
-    mov cx, [passkey_2]
-    mov [eax + 2], cx
-
-    mov DWORD [loop_index_3], 0
-    loop_3_7:
-        mov ebx, [loop_index_3]
-        mov cl, [username_2 + ebx]
-        mov [eax + ebx + 4], cl
-
-        inc dword [loop_index_3]
-        cmp dword [loop_index_3], username_length
-        jl loop_3_7
-
-    mov eax, [requests]
-    mov ebx , [loop_index_1]
+    add eax, 4
+    push eax
+    push username_1
+    call move_username
+    add esp, 8
 
     popa
     leave
@@ -410,7 +367,6 @@ compare_requests: ;; ()
         priority_1_equal: ; priority1 == priority2
             ;; Comparing the requests' usernames
             call compare_username
-
             jmp compare_end
         priority_1_lower: ; priority1 < priority2
             jmp compare_end
@@ -420,14 +376,7 @@ compare_requests: ;; ()
         jmp compare_end
     admin_1_greater: ; admin1 > admin2
         jmp compare_end
-
-        move_to_array:
-        ;; Copy request 1 to the main array
-
-
-        jmp compare_end
     compare_end:
-
 
     popa
     leave
