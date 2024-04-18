@@ -3,3 +3,4 @@
 checker
 *.o
 tmp
+*.log

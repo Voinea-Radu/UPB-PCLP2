@@ -1,1 +1,1 @@
-make clean; make; ./checker > tmp
+make clean; make; ./checker > out.log

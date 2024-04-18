@@ -202,7 +202,7 @@ int main(int argc, char **argv)
 		// printf("After sort\n");
 		// debug_print(0, 0);
 
-		//check_passkeys(requests, len, connected);
+		check_passkeys(requests, len, connected);
 
 		int sort_ok = 1, check_passkeys_ok = 1;
 
