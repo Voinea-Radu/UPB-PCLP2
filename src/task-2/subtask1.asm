@@ -2,6 +2,10 @@
 ;;; Copyright (c) 2024, Voinea Radu-Mihai <contact@voinearadu.com>
 ;;;
 
+;;; Notes:
+;;; Each sub-routine has the following signature:
+;;;     sub_routine_name: ;; (arguments) ;; <local_variables>
+
 %include "../include/io.mac"
 
 %define username_length 50
@@ -10,7 +14,6 @@
 section .data
     loop_index_1 dd 0
     loop_index_2 dd 0
-    loop_index_3 dd 0
     requests dd 0
     requests_length dd 0
 
@@ -24,8 +27,6 @@ section .data
     passkey_2 dw 0
     username_2 times 51 db 0
 
-    username_tmp times 51 db 0
-
 section .text
     global sort_requests
     extern printf
@@ -36,15 +37,11 @@ sort_requests:
     enter 0,0
     pusha
 
-    mov ebx, [ebp + 8]      ; requests
-    mov ecx, [ebp + 12]     ; length
+    mov eax, [ebp + 8]      ; requests
+    mov ebx, [ebp + 12]     ; length
 
-    ;; Init variables
-    mov DWORD [requests], 0
-    mov DWORD [requests_length], 0
-
-    mov [requests], ebx
-    mov [requests_length], ecx
+    mov [requests], eax
+    mov [requests_length], ebx
 
     mov DWORD [loop_index_1], 0
     loop_1:
@@ -58,27 +55,23 @@ sort_requests:
 
             push admin_1
             push ebx
-            push DWORD [requests]
             call read_admin
-            add esp, 12
+            add esp, 8
 
             push priority_1
             push ebx
-            push DWORD [requests]
             call read_priority
-            add esp, 12
+            add esp, 8
 
             push passkey_1
             push ebx
-            push DWORD [requests]
             call read_passkey
-            add esp, 12
+            add esp, 8
 
             push username_1
             push ebx
-            push DWORD [requests]
             call read_username
-            add esp, 12
+            add esp, 8
 
             ;; Read the request with index loop_index_2
             mov ebx, [loop_index_2]
@@ -86,27 +79,23 @@ sort_requests:
 
             push admin_2
             push ebx
-            push DWORD [requests]
             call read_admin
-            add esp, 12
+            add esp, 8
 
             push priority_2
             push ebx
-            push DWORD [requests]
             call read_priority
-            add esp, 12
+            add esp, 8
 
             push passkey_2
             push ebx
-            push DWORD [requests]
             call read_passkey
-            add esp, 12
+            add esp, 8
 
             push username_2
             push ebx
-            push DWORD [requests]
             call read_username
-            add esp, 12
+            add esp, 8
 
             call compare_requests
 
@@ -126,14 +115,14 @@ sort_requests:
     ret
 
 
-read_admin: ;; (requests, index, return_value)
+read_admin: ;; (index, return_value) ;; <requests>
     enter 0,0
 	pusha
 
-    mov eax, [ebp + 8]   ; requests
-    mov ebx, [ebp + 12]  ; index
-    mov ecx, [ebp + 16]  ; return_value
+    mov ebx, [ebp + 8]  ; index
+    mov ecx, [ebp + 12]  ; return_value
 
+    mov eax, [requests]
     mov al, [eax + ebx]
     mov [ecx], al
 
@@ -141,14 +130,14 @@ read_admin: ;; (requests, index, return_value)
     leave
     ret
 
-read_priority: ;; (requests, index, return_value)
+read_priority: ;; (index, return_value) ;; <requests>
     enter 0,0
     pusha
 
-    mov eax, [ebp + 8]   ; requests
-    mov ebx, [ebp + 12]  ; index
-    mov ecx, [ebp + 16]  ; return_value
+    mov ebx, [ebp + 8]   ; index
+    mov ecx, [ebp + 12]  ; return_value
 
+    mov eax, [requests]
     mov al, [eax + ebx + 1]
     mov [ecx], al
 
@@ -156,14 +145,14 @@ read_priority: ;; (requests, index, return_value)
     leave
     ret
 
-read_passkey: ;; (requests, index, return_value)
+read_passkey: ;; (index, return_value) ;; <requests>
     enter 0,0
     pusha
 
-    mov eax, [ebp + 8]   ; requests
-    mov ebx, [ebp + 12]  ; index
-    mov ecx, [ebp + 16]  ; return_value
+    mov ebx, [ebp + 8]   ; index
+    mov ecx, [ebp + 12]  ; return_value
 
+    mov eax, [requests]
     mov ax, [eax + ebx + 2]
     mov [ecx], ax
 
@@ -171,17 +160,16 @@ read_passkey: ;; (requests, index, return_value)
     leave
     ret
 
-read_username: ;; (requests, index, username)
+read_username: ;; (index, return_value) ;; <requests>
     enter 0,0
     pusha
 
-    mov eax, [ebp + 8]   ; requests
-    mov ebx, [ebp + 12]  ; index
-    mov ecx, [ebp + 16]  ; username
+    mov ebx, [ebp + 8]   ; index
+    mov ecx, [ebp + 12]  ; return_value
 
     mov edx, 0 ; username index
     read_username_loop:
-        mov eax, [ebp + 8]
+        mov eax, [requests]
         add eax, ebx
         mov al, [eax + edx + 4]
         mov [ecx + edx], al
@@ -194,11 +182,7 @@ read_username: ;; (requests, index, username)
     leave
     ret
 
-;;;
-;;; Requires the following variables to be defined:
-;;;     admin_1, admin_2
-;;;
-compare_admin: ; ()
+compare_admin: ;; () ;; <admin_1, admin_2>
     enter 0,0
     pusha
 
@@ -223,11 +207,7 @@ compare_admin: ; ()
     leave
     ret
 
-;;;
-;;; Requires the following variables to be defined:
-;;;     priority_1, priority_2
-;;;
-compare_priority: ; ()
+compare_priority: ;; () ;; <priority_1, priority_2>
     enter 0,0
     pusha
 
@@ -252,17 +232,12 @@ compare_priority: ; ()
     leave
     ret
 
-;;;
-;;; Requires the following variables to be defined:
-;;;     username_1, username_2
-;;;
-compare_username: ; ()
+compare_username: ;; () ;; <username_1, username_2>
     enter 0,0
     pusha
 
-    mov DWORD [loop_index_3], 0
+    xor eax, eax
     compare_username_loop:
-        mov eax, [loop_index_3]
         mov bl, [username_1 + eax]
         cmp bl, [username_2 + eax]
 
@@ -280,8 +255,8 @@ compare_username: ; ()
 
         compare_username_loop_continue:
 
-        inc dword [loop_index_3]
-        cmp dword [loop_index_3], username_length
+        inc eax
+        cmp eax, username_length
         jl compare_username_loop
 
     compare_username_end:
@@ -289,7 +264,7 @@ compare_username: ; ()
     leave
     ret
 
-move_username: ;; (source, target)
+move_username: ;; (source, target) ;; <>
     enter 0,0
     pusha
 
@@ -309,12 +284,7 @@ move_username: ;; (source, target)
     leave
     ret
 
-;;;
-;;; Requires the following variables to be defined:
-;;;     admin_1, priority_1, passkey_1, username_1
-;;;     admin_2, priority_2, passkey_2, username_2
-;;;
-swap_requests:
+swap_requests: ;; () ;; <admin_1, priority_1, passkey_1, username_1, admin_2, priority_2, passkey_2, username_2>
     enter 0,0
     pusha
 
@@ -366,13 +336,7 @@ swap_requests:
     leave
     ret
 
-;;;
-;;; Requires the following variables to be defined:
-;;;     loop_index_1, loop_index_2
-;;;     admin_1, priority_1, passkey_1, username_1
-;;;     admin_2, priority_2, passkey_2, username_2
-;;;
-compare_requests: ;; ()
+compare_requests: ;; () ;; <>
     enter 0,0
     pusha
 
