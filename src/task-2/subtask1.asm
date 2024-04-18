@@ -198,7 +198,23 @@ compare_admin: ; ()
     enter 0,0
     pusha
 
+    mov al, BYTE [admin_1]
+    cmp al, BYTE [admin_2]
 
+    jb admin_1_lower
+    je admin_1_equal
+    ja admin_1_greater
+
+    admin_1_lower: ; admin1 < admin2
+        call swap_requests
+        jmp compare_admin_end
+    admin_1_equal: ; admin1 == admin2
+        call compare_priority
+        jmp compare_admin_end
+    admin_1_greater: ; admin1 > admin2
+        jmp compare_admin_end
+
+    compare_admin_end:
     popa
     leave
     ret
@@ -211,7 +227,23 @@ compare_priority: ; ()
     enter 0,0
     pusha
 
+    mov al, BYTE [priority_1]
+    cmp al, BYTE [priority_2]
 
+    jb priority_1_lower
+    je priority_1_equal
+    ja priority_1_greater
+
+    priority_1_equal: ; priority1 == priority2
+        call compare_username
+        jmp compare_priority_end
+    priority_1_lower: ; priority1 < priority2
+        jmp compare_priority_end
+    priority_1_greater: ; priority1 > priority2
+        call swap_requests
+        jmp compare_priority_end
+
+    compare_priority_end:
     popa
     leave
     ret
@@ -340,43 +372,7 @@ compare_requests: ;; ()
     enter 0,0
     pusha
 
-    ;; Compare the requests' admin status
-
-    mov al, BYTE [admin_1]
-    cmp al, BYTE [admin_2]
-
-    jb admin_1_lower
-    je admin_1_equal
-    ja admin_1_greater
-
-    jmp compare_end
-
-    admin_1_lower: ; admin1 < admin2
-        call swap_requests
-        jmp compare_end
-    admin_1_equal: ; admin1 == admin2
-        ;; Compare the requests' priorities
-        mov al, BYTE [priority_1]
-        cmp al, BYTE [priority_2]
-
-        jb priority_1_lower
-        je priority_1_equal
-        ja priority_1_greater
-        jmp compare_end
-
-        priority_1_equal: ; priority1 == priority2
-            ;; Comparing the requests' usernames
-            call compare_username
-            jmp compare_end
-        priority_1_lower: ; priority1 < priority2
-            jmp compare_end
-        priority_1_greater: ; priority1 > priority2
-            call swap_requests
-            jmp compare_end
-        jmp compare_end
-    admin_1_greater: ; admin1 > admin2
-        jmp compare_end
-    compare_end:
+    call compare_admin
 
     popa
     leave
