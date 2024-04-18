@@ -23,10 +23,81 @@ section .data
 
     username_tmp times 51 db 0
 
+    return_value dd 0
+
 section .text
     global sort_requests
     extern printf
     extern debug_print
+
+
+read_admin: ;; (requests, index, return_value)
+    enter 0,0
+	pusha
+
+    mov eax, [ebp + 8]   ; requests
+    mov ebx, [ebp + 12]  ; index
+    mov ecx, [ebp + 16]  ; return_value
+
+    mov al, [eax + ebx]
+    mov [ecx], al
+
+    popa
+    leave
+    ret
+
+read_priority: ;; (requests, index, return_value)
+    enter 0,0
+    pusha
+
+    mov eax, [ebp + 8]   ; requests
+    mov ebx, [ebp + 12]  ; index
+    mov ecx, [ebp + 16]  ; return_value
+
+    mov al, [eax + ebx + 1]
+    mov [ecx], al
+
+    popa
+    leave
+    ret
+
+read_passkey: ;; (requests, index, return_value)
+    enter 0,0
+    pusha
+
+    mov eax, [ebp + 8]   ; requests
+    mov ebx, [ebp + 12]  ; index
+    mov ecx, [ebp + 16]  ; return_value
+
+    mov ax, [eax + ebx + 2]
+    mov [ecx], ax
+
+    popa
+    leave
+    ret
+
+read_username: ;; (requests, index, username)
+    enter 0,0
+    pusha
+
+    mov eax, [ebp + 8]   ; requests
+    mov ebx, [ebp + 12]  ; index
+    mov ecx, [ebp + 16]  ; username
+
+    mov edx, 0 ; username index
+    read_username_loop:
+        mov eax, [ebp + 8]
+        add eax, ebx
+        mov al, [eax + edx + 4]
+        mov [ecx + edx], al
+
+        inc edx
+        cmp edx, username_length
+        jl read_username_loop
+
+    popa
+    leave
+    ret
 
 sort_requests:
     enter 0,0
@@ -52,59 +123,57 @@ sort_requests:
             mov ebx, [loop_index_1]
             imul ebx, struct_size
 
-            mov eax, [requests]
-            mov al, [eax + ebx]
-            mov [admin_1], al
+            push admin_1
+            push ebx
+            push DWORD [requests]
+            call read_admin
+            add esp, 12
 
-            mov eax, [requests]
-            mov al, [eax + ebx + 1]
-            mov [priority_1], al
+            push priority_1
+            push ebx
+            push DWORD [requests]
+            call read_priority
+            add esp, 12
 
-            mov eax, [requests]
-            mov ax, [eax + ebx + 2]
-            mov [passkey_1], ax
+            push passkey_1
+            push ebx
+            push DWORD [requests]
+            call read_passkey
+            add esp, 12
 
-            mov DWORD [loop_index_3], 0
-            loop_3_1:
-                mov ecx, [loop_index_3]
-
-                mov eax, [requests]
-                add eax, ebx
-                mov al, [eax + ecx + 4]
-                mov [username_1 + ecx], al
-
-                inc dword [loop_index_3]
-                cmp dword [loop_index_3], username_length
-                jl loop_3_1
+            push username_1
+            push ebx
+            push DWORD [requests]
+            call read_username
+            add esp, 12
 
             ;; Read the request with index loop_index_2
             mov ebx, [loop_index_2]
             imul ebx, struct_size
 
-            mov eax, [requests]
-            mov al, [eax + ebx]
-            mov [admin_2], al
+            push admin_2
+            push ebx
+            push DWORD [requests]
+            call read_admin
+            add esp, 12
 
-            mov eax, [requests]
-            mov al, [eax + ebx + 1]
-            mov [priority_2], al
+            push priority_2
+            push ebx
+            push DWORD [requests]
+            call read_priority
+            add esp, 12
 
-            mov eax, [requests]
-            mov ax, [eax + ebx + 2]
-            mov [passkey_2], ax
+            push passkey_2
+            push ebx
+            push DWORD [requests]
+            call read_passkey
+            add esp, 12
 
-            mov DWORD [loop_index_3], 0
-            loop_3_2:
-                mov ecx, [loop_index_3]
-
-                mov eax, [requests]
-                add eax, ebx
-                mov al, [eax + ecx + 4]
-                mov [username_2 + ecx], al
-
-                inc dword [loop_index_3]
-                cmp dword [loop_index_3], username_length
-                jl loop_3_2
+            push username_2
+            push ebx
+            push DWORD [requests]
+            call read_username
+            add esp, 12
 
             ;; Compare the requests' admin status
 
