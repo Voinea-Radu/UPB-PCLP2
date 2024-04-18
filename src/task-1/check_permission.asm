@@ -1,3 +1,7 @@
+;;;
+;;; Copyright (c) 2024, Voinea Radu-Mihai <contact@voinearadu.com>
+;;;
+
 %include "../include/io.mac"
 
 extern ant_permissions

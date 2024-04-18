@@ -1,3 +1,7 @@
+;;;
+;;; Copyright (c) 2024, Voinea Radu-Mihai <contact@voinearadu.com>
+;;;
+
 %include "../include/io.mac"
 
 %define struct_size 55
