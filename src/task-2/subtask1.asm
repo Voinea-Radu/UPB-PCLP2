@@ -50,50 +50,44 @@ sort_requests:
         mov DWORD [loop_index_2], eax
         loop_2:
             ;; Read the request with index loop_index_1
-            mov ebx, [loop_index_1]
-            imul ebx, struct_size
-
             push admin_1
-            push ebx
+            push DWORD [loop_index_1]
             call read_admin
             add esp, 8
 
             push priority_1
-            push ebx
+            push DWORD [loop_index_1]
             call read_priority
             add esp, 8
 
             push passkey_1
-            push ebx
+            push DWORD [loop_index_1]
             call read_passkey
             add esp, 8
 
             push username_1
-            push ebx
+            push DWORD [loop_index_1]
             call read_username
             add esp, 8
 
             ;; Read the request with index loop_index_2
-            mov ebx, [loop_index_2]
-            imul ebx, struct_size
-
             push admin_2
-            push ebx
+            push DWORD [loop_index_2]
             call read_admin
             add esp, 8
 
             push priority_2
-            push ebx
+            push DWORD [loop_index_2]
             call read_priority
             add esp, 8
 
             push passkey_2
-            push ebx
+            push DWORD [loop_index_2]
             call read_passkey
             add esp, 8
 
             push username_2
-            push ebx
+            push DWORD [loop_index_2]
             call read_username
             add esp, 8
 
@@ -122,6 +116,8 @@ read_admin: ;; (index, return_value) ;; <requests>
     mov ebx, [ebp + 8]  ; index
     mov ecx, [ebp + 12]  ; return_value
 
+    imul ebx, struct_size
+
     mov eax, [requests]
     mov al, [eax + ebx]
     mov [ecx], al
@@ -136,6 +132,8 @@ read_priority: ;; (index, return_value) ;; <requests>
 
     mov ebx, [ebp + 8]   ; index
     mov ecx, [ebp + 12]  ; return_value
+
+    imul ebx, struct_size
 
     mov eax, [requests]
     mov al, [eax + ebx + 1]
@@ -152,6 +150,8 @@ read_passkey: ;; (index, return_value) ;; <requests>
     mov ebx, [ebp + 8]   ; index
     mov ecx, [ebp + 12]  ; return_value
 
+    imul ebx, struct_size
+
     mov eax, [requests]
     mov ax, [eax + ebx + 2]
     mov [ecx], ax
@@ -166,6 +166,8 @@ read_username: ;; (index, return_value) ;; <requests>
 
     mov ebx, [ebp + 8]   ; index
     mov ecx, [ebp + 12]  ; return_value
+
+    imul ebx, struct_size
 
     mov edx, 0 ; username index
     read_username_loop:
