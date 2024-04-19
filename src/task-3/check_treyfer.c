@@ -79,19 +79,7 @@ double do_tests(int type, int num_tests)
 			fread(ref_block, 1, BLOCK_SIZE, ref);
 
 			if (type == 0) {
-				printf("in  key     ref\n");
-				for (int k = 0; k < BLOCK_SIZE; k++) {
-					printf("%3hhu %3hhu -> %3hhu\n", in_block[k], key_bytes[k], ref_block[k]);
-				}
-				printf("\n\n");
-
 				treyfer_crypt(in_block, key_bytes);
-
-				printf("out vs ref\n");
-				for (int k = 0; k < BLOCK_SIZE; k++) {
-					printf("%3hhu    %3hhu\n", in_block[k], ref_block[k]);
-				}
-				printf("\n\n");
 			} else {
 				treyfer_dcrypt(in_block, key_bytes);
 			}
