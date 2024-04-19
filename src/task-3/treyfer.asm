@@ -41,10 +41,22 @@ treyfer_crypt: ;; (plain_text, key) ;; <>
     mov [plain_text], eax
     mov [key], ebx
 
-    call encrypt_step_0
-    call encrypt_step_1
-    call encrypt_step_2
-    call encrypt_step_3
+    mov DWORD [index], 0
+    encrypt_loop:
+        call encrypt_step_0
+        call encrypt_step_1
+        call encrypt_step_2
+        call encrypt_step_3
+        call encrypt_step_4
+        call encrypt_step_5
+
+        PRINTF32 `\n\n\x0`
+
+        mov eax, [index]
+        add eax, 1
+        mov [index], eax
+        cmp eax, block_size
+        jl encrypt_loop
 
 	popa
 	leave
@@ -61,7 +73,7 @@ encrypt_step_0: ;; () ;; <plain_text, index, t>
 
     mov [t], al
 
-    PRINTF32 `plain[%d] = %c (%hhu)\n\x0`, [index], [t], [t]
+    PRINTF32 `t = %hhu\n\x0`, eax
 
     popa
     leave
@@ -77,11 +89,12 @@ encrypt_step_1: ;; () ;; <key, index, t>
     mov ebx, [index]
     mov eax, [eax + ebx]
 
-    PRINTF32 `key[%d] = %c (%hhu)\n\x0`, [index], eax, eax
+    PRINTF32 `key = %hhu\n\x0`, eax
 
+    mov ecx, [t] ; TODO delete, only for debug
     add [t], eax
 
-    PRINTF32 `plain[%d] + key[%d] = %c (%hhu)\n\x0`, [index], [index], [t], [t]
+    PRINTF32 `t = %hhu + %hhu = %hhu\n\x0`, ecx, eax, [t]
 
     popa
     leave
@@ -96,9 +109,12 @@ encrypt_step_2: ;; () ;; <sbox, index, t>
     xor eax, eax
     mov al, [t]
     mov al, [sbox + eax]
+
+    mov ebx, [t] ; TODO Delete, only for debug
+
     mov [t], al
 
-    PRINTF32 `sbox[plain[%d] + key[%d]] = %c (%hhu)\n\x0`, [index], [index], [t], [t]
+    PRINTF32 `t = sbox[%hhu] = %hhu\n\x0`, ebx, [t]
 
     popa
     leave
@@ -120,27 +136,67 @@ encrypt_step_3: ;; () ;; <index, plain_text, t>
     mov ebx, [plain_text]
     mov ebx, [ebx + eax]
 
-    PRINTF32 `plain[%d] = %c (%hhu)\n\x0`, eax, ebx, ebx
+    PRINTF32 `plain[%d] = %hhu\n\x0`, eax, ebx
+
+    mov ecx, [t] ; TODO delete, only for debug
 
     add [t], ebx
 
-    PRINTF32 `sbox[plain[%d] + key[%d]] + plain[%d] = %c (%hhu)\n\x0`, [index], [index], eax, [t], [t]
+    PRINTF32 `t = %hhu + %hhu = %hhu\n\x0`, ecx, ebx, [t]
 
     popa
     leave
     ret
 
-encrypt_step_4: ;; () ;; <>
+encrypt_step_4: ;; () ;; <t, index>
     push ebp
     mov ebp, esp
     pusha
 
+    mov eax, [t]
+    mov ebx, [t] ; first bit
+
+    and ebx, 1000_0000b
+    shr ebx, 7
+
+    shl eax, 1
+    and eax, 1111_1110b
+
+    or eax, ebx
+
+    mov ecx, [t] ; TODO delete, only for debug
+
+    mov [t], al
+
+    PRINTF32 `t = %hhu <<< 1 = %hhu\n\x0`, ecx, [t]
 
     popa
     leave
     ret
 
+encrypt_step_5: ;; () ;; <t>
+    push ebp
+    mov ebp, esp
+    pusha
 
+    mov eax, [index]
+    add eax, 1
+    cmp eax, block_size
+    jne .skip_set_to_zero
+
+    mov eax, 0
+
+    .skip_set_to_zero:
+
+    mov ebx, [plain_text]
+    mov cl, [t]
+    mov BYTE[ebx + eax], cl
+
+    PRINTF32 `plain[%d] = %hhu\n\x0`, eax, [t]
+
+    popa
+    leave
+    ret
 
 treyfer_dcrypt: ;; (encrypted_text, key) ;; <>
 	push ebp

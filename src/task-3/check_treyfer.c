@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
+
 #define BLOCK_SIZE 8
 
 extern uint8_t sbox[256];
 extern uint32_t num_rounds;
+
 extern void treyfer_crypt(uint8_t *text, uint8_t *key);
+
 extern void treyfer_dcrypt(uint8_t *text, uint8_t *key);
 
-size_t get_file_size(FILE *f) {
+size_t get_file_size(FILE *f)
+{
 	off_t cur = ftell(f);
 	fseek(f, 0, SEEK_END);
 	size_t siz = ftell(f);
@@ -17,7 +21,8 @@ size_t get_file_size(FILE *f) {
 }
 
 
-double do_tests(int type, int num_tests) {
+double do_tests(int type, int num_tests)
+{
 	double score = 0.0;
 	char input_file[256] = {0};
 	char key_file[256] = {0};
@@ -32,7 +37,7 @@ double do_tests(int type, int num_tests) {
 	}
 
 
-    	for (int i = 0; i < num_tests; i++) {
+	for (int i = 0; i < num_tests; i++) {
 		if (type == 0) {
 			sprintf(input_file, "input/treyfer_enc_%d.in", i);
 			in = fopen(input_file, "rb");
@@ -73,9 +78,20 @@ double do_tests(int type, int num_tests) {
 			fread(in_block, 1, BLOCK_SIZE, in);
 			fread(ref_block, 1, BLOCK_SIZE, ref);
 
-
 			if (type == 0) {
+				printf("in  key     ref\n");
+				for (int k = 0; k < BLOCK_SIZE; k++) {
+					printf("%3hhu %3hhu -> %3hhu\n", in_block[k], key_bytes[k], ref_block[k]);
+				}
+				printf("\n\n");
+
 				treyfer_crypt(in_block, key_bytes);
+
+				printf("out vs ref\n");
+				for (int k = 0; k < BLOCK_SIZE; k++) {
+					printf("%3hhu    %3hhu\n", in_block[k], ref_block[k]);
+				}
+				printf("\n\n");
 			} else {
 				treyfer_dcrypt(in_block, key_bytes);
 			}
@@ -106,12 +122,13 @@ double do_tests(int type, int num_tests) {
 }
 
 
-int main() {
+int main()
+{
 	double score = 0.0;
 	printf("--------------TASK 3-------------------\n\n");
 	score += do_tests(0, 5);
 	score += do_tests(1, 5);
-    	printf("\nTASK 3 SCORE: %.2lf / 25.00\n\n", score);
+	printf("\nTASK 3 SCORE: %.2lf / 25.00\n\n", score);
 
 	return 0;
 }
