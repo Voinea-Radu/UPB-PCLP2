@@ -79,8 +79,6 @@ encrypt_step_0: ;; () ;; <plain_text, index, t>
 
     mov [t], al
 
-    ;PRINTF32 `t = %hhu\n\x0`, eax
-
     popa
     leave
     ret
@@ -95,12 +93,7 @@ encrypt_step_1: ;; () ;; <key, index, t>
     mov ebx, [index]
     mov eax, [eax + ebx]
 
-    ;PRINTF32 `key = %hhu\n\x0`, eax
-
-    ;mov ecx, [t] ; TODO delete, only for debug
     add [t], eax
-
-    ;PRINTF32 `t = %hhu + %hhu = %hhu\n\x0`, ecx, eax, [t]
 
     popa
     leave
@@ -116,11 +109,7 @@ encrypt_step_2: ;; () ;; <sbox, index, t>
     mov al, [t]
     mov al, [sbox + eax]
 
-    ;mov ebx, [t] ; TODO Delete, only for debug
-
     mov [t], al
-
-    ;PRINTF32 `t = sbox[%hhu] = %hhu\n\x0`, ebx, [t]
 
     popa
     leave
@@ -142,13 +131,7 @@ encrypt_step_3: ;; () ;; <index, plain_text, t>
     mov ebx, [plain_text]
     mov ebx, [ebx + eax]
 
-    ;PRINTF32 `plain[%d] = %hhu\n\x0`, eax, ebx
-
-    ;mov ecx, [t] ; TODO delete, only for debug
-
     add [t], ebx
-
-    ;PRINTF32 `t = %hhu + %hhu = %hhu\n\x0`, ecx, ebx, [t]
 
     popa
     leave
@@ -167,14 +150,9 @@ encrypt_step_4: ;; () ;; <t, index>
 
     shl eax, 1
     and eax, 1111_1110b
-
     or eax, ebx
 
-    ;mov ecx, [t] ; TODO delete, only for debug
-
     mov [t], al
-
-    ;PRINTF32 `t = %hhu <<< 1 = %hhu\n\x0`, ecx, [t]
 
     popa
     leave
@@ -197,8 +175,6 @@ encrypt_step_5: ;; () ;; <t>
     mov ebx, [plain_text]
     mov cl, [t]
     mov BYTE[ebx + eax], cl
-
-    ;PRINTF32 `plain[%d] = %hhu\n\x0`, eax, [t]
 
     popa
     leave
