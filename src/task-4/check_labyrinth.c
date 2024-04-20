@@ -13,7 +13,7 @@ void solve_labyrinth(unsigned int *out_line, unsigned int *out_col,
                         unsigned int m, unsigned int n, char **labyrinth);
 
 
-void read_test(unsigned int test_no, char ***a, 
+void read_test(unsigned int test_no, char ***a,
                 unsigned int *m, unsigned int *n) {
     unsigned int line, col;
     FILE *file;
@@ -59,7 +59,7 @@ void check_result(int test_no, Position *sol, double *score) {
 
     fscanf(ref_file, "%u %u", &correct_solution.line, &correct_solution.col);
 
-    if (correct_solution.line == sol->line 
+    if (correct_solution.line == sol->line
         && correct_solution.col == sol->col) {
         printf("Test %d.................PASSED: %dp\n", test_no, 3);
         *score += 3.0;
@@ -78,7 +78,7 @@ void check_result(int test_no, Position *sol, double *score) {
 
 int main() {
     Position sol;
-    unsigned int m, n, test_no, line, col;
+    unsigned int m, n, test_no, line, column;
     char **a;
     double score = 0.0;
 
