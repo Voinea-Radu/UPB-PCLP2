@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define BLOCK_SIZE 8
 
@@ -35,7 +36,6 @@ double do_tests(int type, int num_tests)
 	} else {
 		printf("------------DECRYPT TESTS--------------\n\n");
 	}
-
 
 	for (int i = 0; i < num_tests; i++) {
 		if (type == 0) {
