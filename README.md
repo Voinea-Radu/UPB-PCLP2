@@ -9,7 +9,7 @@
 
 După ce și-a făcut atâția prieteni în cadrul temei 2, suricata Zoly a efectuat un audit de securitate al rețelelor clanurilor cărora s-a alăturat și și-a dat seama că nu există nicio măsură adecvată de securitate. Astfel, ea dorește să își creeze propriul sistem de detecție si prevenire a intruziunilor in rețea, si vă roagă să o ajutați cu implementarea unor componente ale acestuia.
 
-## Task 1 - Parantezinatorul
+## Task 1 - Parantezinator
 
 Sistemul se bazează pe anumite reguli care trebuie scrise într-un fișier de configurare.
 Un aspect important al verificării acestor reguli este parantezarea diferitelor elemente ale regulii.
@@ -130,7 +130,7 @@ Printarea se va realiza prin apelara funcției `printf`.
 | Folosire macro PRINTF32 | -10p |
 | Soluție nerecursivă | -20p |
 
-## Bonus
+## Bonus - x64 assembly
 
 Acum ca Zoly și-a scris sistemul de detecție a intruziunilor și își poate apăra toți prietenii pe care și i-a facut în tema 2, se poate întoarce la marea ei pasiune: programarea funcțională.
 
