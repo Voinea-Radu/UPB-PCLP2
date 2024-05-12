@@ -22,7 +22,10 @@ Funcția pe care o veți implementa va returna 0 daca nu sunt probleme de parant
 
 ## Task 2 - Divide et impera
 
-În acest task veți implementa doi algoritmi bine cunoscuți (sperăm noi): *quick sort* și *binary search*.
+Acum că am verificat corectitudinea regulilor, trebuie să le sortăm după mai multe criterii numerice. Deoarece o implementare în C este prea high level, ne trebuie un algoritm de sortare eficient scris în assembly, și anume *quick sort*.
+Deoarece trebuie să putem identifica regulile dupa sortare, ne trebuie și un mod de căutare în lista de reguli. Un algoritm eficient de căutare într-o listă sortată este *binary search*.
+
+În acest task veți implementa cei doi algoritmi: *quick sort* și *binary search*.
 
 *Note:* ambele implementări trebuie să fie recursive, NU iterative.
 
