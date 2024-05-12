@@ -4,14 +4,14 @@
 
 *Note:* ambele implementări trebuie să fie recursive, NU iterative.
 
-Pentru a rula toate testele, rulați executabilul generat fară niciun argument. Pentru a rula un singur test, pasati unul dintre keyword-urile `qsort` și `bsearch` ca prim argument, urmat de numărul testului.
+Pentru a rula toate testele, rulați executabilul generat fără niciun argument. Pentru a rula un singur test, apăsați unul dintre keyword-urile `qsort` și `bsearch` ca prim argument, urmat de numărul testului.
 De exemplu:
 
 ```bash
 # rulează toate testele
 $ ./checker
 
-# tulează un singur test
+# rulează un singur test
 $ ./checker qsort 3
 $ ./checker bsearch 10
 ```
