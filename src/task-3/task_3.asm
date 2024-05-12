@@ -1,9 +1,10 @@
+%include "../include/io.mac"
 
 ; The `expand` function returns an address to the following type of data
 ; structure.
 struc neighbours_t
     .num_neighs resd 1  ; The number of neighbours returned.
-    .neighs resd 1      ; Vector containing the `num_neighs` neighbours.
+    .neighs resd 1      ; Address of the vector containing the `num_neighs` neighbours.
                         ; A neighbour is represented by an unsigned int (dword).
 endstruc
 
