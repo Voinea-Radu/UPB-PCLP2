@@ -1,4 +1,4 @@
-# Tema 3
+# Tema 3 - Suricate în rețea
 
 **Suricatele responsabile**
 - Teodor Teugea
@@ -198,7 +198,7 @@ Pentru a rula toate testele:
     python3 local_checker.py --all
 ```
 
-Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle (**Pentru ca fisierul README sa fie inclus, trebuie sa fie in directorul src/ .**):
+Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle (**Pentru ca fisierul README sa fie inclus, trebuie sa fie in directorul "src/" .**):
 
 ```bash
     python3 local_checker.py --zip
@@ -206,4 +206,8 @@ Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle (**Pentru ca f
 
 La o rulare normală, checker-ul nu va păstra output-urile voastre, ci va face clean.
 Pentru a păstra output-urile, adăugați argumentul `--no_clean` la comanda de rulare a checker-ului.
-Formatul incorect al arhivei duce la depunctarea intregii teme.
+
+## Depunctări
+
+Formatul încorect al arhivei duce la **depunctarea întregii teme**.
+O temă trimisă după deadline **nu se ia în considerare**.
