@@ -1,13 +1,18 @@
 # Task 1 - Paranthesinator
 
-In acest task va trebui sa implementati o functie care verifica
-daca un sir de paranteze formeaza o parantezare corecta, adica
-daca toate parantezele deschise sunt inchise corespunator.
+Sistemul se bazează pe anumite reguli care trebuie scrise intr-un
+fișier de configurare.
+Un aspect important al verificării acestor reguli este parantezarea
+diferitelor elemente ale regulii.
 
-De exemplu, sirul "()()" este o parantezare corecta, dar
-"{{}" nu este, pentru ca se inchide doar o paranteza,
-si nici "{[}]" nu este, pentru ca parantezele nu sunt
-inchise corespunzator.
+În acest task va trebui să implementați o funcție care verifică
+dacă un șir de paranteze formează o parantezare corectă, adică
+dacă toate parantezele deschise sunt inchise corespunzător.
 
-Functia pe care o veti implementa va returna 0 daca nu sunt probleme
-de parantezare (daca sunt parantezele puse bine) si 1 altfel.
+De exemplu, șirul "()()" este o parantezare corectă, dar
+"{{}" nu este, pentru ca se închide doar o paranteză,
+și nici "{[}]" nu este, pentru că parantezele nu sunt
+închise corespunzător.
+
+Funcția pe care o veți implementa va returna 0 daca nu sunt probleme
+de parantezare (dacă sunt parantezele puse bine) si 1 altfel.
