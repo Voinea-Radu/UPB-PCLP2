@@ -7,30 +7,31 @@
 - Cristian Lazar
 - Valentin-Razvan Bogdan
 
-Dupa ce si-a facut atatia prieteni in cadrul temei 2, suricata Zoly
-a efectuat un audit se securitate al retelelor clanurilor carora
-s-a alaturat si si-a dat seama ca nu exista nicio masura adecvata
-de securitate. Astfel, ea doreste sa isi creeze propriul sistem
-de detectie si prevenire a intruziunilor in retea, si va
-roaga sa o ajutati cu implementarea unor componente ale acestuia.
+După ce și-a făcut atâția prieteni în cadrul temei 2, suricata Zoly 
+a efectuat un audit se securitate al rețelelor clanurilor cărora 
+s-a alăturat și și-a dat seama că nu există nicio măsură adecvată
+de securitate. Astfel, ea dorește să își creeze propriul sistem
+de detecție si prevenire a intruziunilor in rețea, si vă
+roagă să o ajutați cu implementarea unor componente ale acestuia.
 
 ## Task 1
 
-Sistemul se bazeaza pe anumite reguli care trebuie scrise in fisier.
-Un aspect important al verificarii acestor reguli este parantezarea
+Sistemul se bazează pe anumite reguli care trebuie scrise intr-un
+fișier de configurare.
+Un aspect important al verificării acestor reguli este parantezarea
 diferitelor elemente ale regulii.
 
-In acest task va trebui sa implementati o functie care verifica
-daca un sir de paranteze formeaza o parantezare corecta, adica
-daca toate parantezele deschise sunt inchise corespunator.
+În acest task va trebui să implementați o funcție care verifică
+dacă un șir de paranteze formează o parantezare corectă, adică
+dacă toate parantezele deschise sunt inchise corespunzător.
 
-De exemplu, sirul "()()" este o parantezare corecta, dar
-"{{}" nu este, pentru ca se inchide doar o paranteza,
-si nici "{[}]" nu este, pentru ca parantezele nu sunt
-inchise corespunzator.
+De exemplu, șirul "()()" este o parantezare corectă, dar
+"{{}" nu este, pentru ca se închide doar o paranteză,
+și nici "{[}]" nu este, pentru că parantezele nu sunt
+închise corespunzător.
 
-Functia pe care o veti implementa va returna 0 daca nu sunt probleme
-de parantezare (daca sunt parantezele puse bine) si 1 altfel.
+Funcția pe care o veți implementa va returna 0 daca nu sunt probleme
+de parantezare (dacă sunt parantezele puse bine) si 1 altfel.
 
 ## Task 2 - Divide et impera
 
@@ -150,26 +151,26 @@ Implementarea trebuie să fie recursivă, **NU** iterativă.
 
 ## Bonus
 
-Acum ca Zoly si-a scris sistemul de detectie a intruziunilor
-si isi poate apara toti prietenii pe care si i-a facut in tema 2,
-se poate intoarce la marea ei pasiune: programarea functionala.
+Acum ca Zoly și-a scris sistemul de detecție a intruziunilor
+și își poate apăra toți prietenii pe care și i-a facut în tema 2,
+se poate întoarce la marea ei pasiune: programarea funcțională.
 
-Totodata, spre deosebire de echipa de PCLP2, ea a inteles ca in
-prezent se folosesc sisteme pe 64 de biti, iar cele pe 32 de biti
-sunt foarte rare. Astfel, ea doreste sa implementeze functiile
-`map` si `reduce` in assembly pe 64 de biti si folosin si numere
-pe 64 de biti. Stiti de la
+Totodată, spre deosebire de echipa de PCLP2, ea a înțeles că în
+prezent se folosesc sisteme pe 64 de biți, iar cele pe 32 de biți
+sunt foarte rare. Astfel, ea dorește să implementeze funcțiile
+`map` și `reduce` în assembly pe 64 de biți si folosim și numere
+pe 64 de biți. Stiți de la
 [tema 1](https://gitlab.cs.pub.ro/iocla/tema-1-2024) ce sunt fiecare.
 
 ## Map
 
 Antet map:
-```
+```c
 void map(int64_t *destination_array, int64_t *source_array, int64_t array_size, int64_t(*f)(int64_t));
 ```
 
 Antet functie ce poate fi folosita pentru map:
-```
+```c
 int64_t map_func1(int64_t curr_elem);
 ```
 
@@ -183,12 +184,12 @@ map(dst, src, n, to_apply):
 ## Reduce
 
 Antet reduce:
-```
+```c
 int64_t reduce(int64_t *destination_array, int64_t *source_array, int64_t array_size, int64_t accumulator_initial_value, int64_t(*f)(int64_t, int64_t));
 ```
 
 Antet functie ce poate fi folosita pentru reduce:
-```
+```c
 int64_t reduce_func1(int64_t accumulator, int64_t current_elem);
 ```
 

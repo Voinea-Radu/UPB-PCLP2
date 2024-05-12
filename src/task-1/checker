@@ -3,7 +3,7 @@ mkdir -p out
 
 check_one() {
 	./paranthesinator < in/$1.in > out/$1.out
-	if cmp --silent -- out/$1.out ref/$1.out; then
+	if cmp --silent -- out/$1.out ref/$1.ref; then
 		printf "Test %02d ................. PASSED: 2.0p\n" $1
 		TOTAL_POINTS=$(($TOTAL_POINTS + 2))
 	else
