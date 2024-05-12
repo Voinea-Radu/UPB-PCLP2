@@ -6,9 +6,12 @@ LINKFLAGS=-m32 -no-pie
 INCPATHS=include
 CSRCS=src/check.c src/list.c
 ASSRCS=task_3.asm
+TESTSDIR= tests
 
 OBJECTS=$(CSRCS:.c=.o) $(ASSRCS:.asm=.o)
 INCFLAGS=$(foreach TMP,$(INCPATHS),-I$(TMP))
+OUTFOLDERS=$(foreach TMP, $(wildcard $(TESTSDIR)/*), $(TMP))
+OUTS=$(addsuffix /dfs.out, $(OUTFOLDERS))
 
 build all: checker
 
@@ -23,4 +26,4 @@ checker: $(OBJECTS)
 
 .PHONY: clean
 clean:
-	rm -rf checker $(OBJECTS)
+	rm -rf checker $(OBJECTS) $(OUTS)
