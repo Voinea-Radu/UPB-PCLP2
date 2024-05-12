@@ -64,7 +64,7 @@ class Linter:
                 elif tmp_line.startswith('section'):
                     inside_text_section = False
 
-                if inside_text_section is True and not tmp_line.startswith('global'):
+                if inside_text_section is True and not tmp_line.startswith('global') and not tmp_line.startswith('extern'):
                     if target_indentation == -1:
                         target_indentation = len(line) - len(line.lstrip())
 
