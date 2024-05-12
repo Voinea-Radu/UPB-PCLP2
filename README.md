@@ -138,7 +138,7 @@ endstruc
 
 ### Cerința
 
-Vi se cere să implementați funcția `dfs()` din fișierul `dfs.asm`, care are următoarea semnătură:
+Vi se cere să implementați **recursiv** funcția `dfs()` din fișierul `dfs.asm`, care are următoarea semnătură:
 
 ```c
 void dfs(uint32_t node, neighbours_t *(*expand)(uint32_t node));
@@ -146,8 +146,14 @@ void dfs(uint32_t node, neighbours_t *(*expand)(uint32_t node));
 
 Aceasta primește ca parametru nodul sursă și adresa funcției `expand` și se cere să implementați algoritmul de dfs și să printați nodurile în momentul în care le viziați.
 
-Printarea se va realiza prin apelara funcției `printf`. Se depunctează folosirea macro-ului `PRINTF32`.
-Implementarea trebuie să fie recursivă, **NU** iterativă.
+Printarea se va realiza prin apelara funcției `printf`.
+
+### Depunctari
+
+| Descriere | Depunctare |
+| --- | --- |
+| Folosire macro PRINTF32 | -10p |
+| Soluție nerecursivă | -30p |
 
 ## Bonus
 
@@ -165,40 +171,45 @@ pe 64 de biți. Stiți de la
 ## Map
 
 Antet map:
+
 ```c
 void map(int64_t *destination_array, int64_t *source_array, int64_t array_size, int64_t(*f)(int64_t));
 ```
 
 Antet functie ce poate fi folosita pentru map:
+
 ```c
 int64_t map_func1(int64_t curr_elem);
 ```
 
 Pseudocod map:
-```
+
+```text
 map(dst, src, n, to_apply):
-	for i de la 0 la n:
-		dst[i] = to_apply(src[i])
+    for i de la 0 la n:
+        dst[i] = to_apply(src[i])
 ```
 
 ## Reduce
 
 Antet reduce:
+
 ```c
 int64_t reduce(int64_t *destination_array, int64_t *source_array, int64_t array_size, int64_t accumulator_initial_value, int64_t(*f)(int64_t, int64_t));
 ```
 
 Antet functie ce poate fi folosita pentru reduce:
+
 ```c
 int64_t reduce_func1(int64_t accumulator, int64_t current_elem);
 ```
 
 Pseudocod reduce:
-```
-reduce(src, n, accumulator_initial, to_apply):
-	acc = accumulator_initial
-	for i de la 0 la n:
-		acc = to_apply(acc, src[i])
-	return acc
-```
 
+```text
+reduce(src, n, accumulator_initial, to_apply):
+    acc = accumulator_initial
+    for i de la 0 la n:
+        acc = to_apply(acc, src[i])
+    return acc
+```
