@@ -27,6 +27,8 @@ runExec = "./"
 checker = "checker"
 taskDir = "../src/task-"
 bonusDir = "../src/bonus"
+linterDir = "../src/linter"
+readme_path = "../src/README"
 
 zipName = "VMChecker_Homework_2"
 
@@ -83,6 +85,42 @@ def test_bonus():
 
     rc = subprocess.call(f"make -C {taskString} clean > /dev/null 2> /dev/null", shell=useShell)
 
+def run_linter():
+    global points
+    linter_points= 5.0
+
+    print("======================= Linter =======================\n")
+
+    checkerOutput = str(subprocess.check_output(f"cd {linterDir} && ./linter-script-file ../task-1/paranthesinator.asm", shell=useShell), encoding='utf-8')
+    if len(checkerOutput) > 0:
+        linter_points = 0.0
+    checkerOutput = str(subprocess.check_output(f"cd {linterDir} && ./linter-script-file ../task-2/subtask_1.asm", shell=useShell), encoding='utf-8')
+    if len(checkerOutput) > 0:
+        linter_points = 0.0
+    checkerOutput = str(subprocess.check_output(f"cd {linterDir} && ./linter-script-file ../task-2/subtask_2.asm", shell=useShell), encoding='utf-8')
+    if len(checkerOutput) > 0:
+        linter_points = 0.0
+    checkerOutput = str(subprocess.check_output(f"cd {linterDir} && ./linter-script-file ../task-3/task_3.asm", shell=useShell), encoding='utf-8')
+    if len(checkerOutput) > 0:
+        linter_points = 0.0
+    checkerOutput = str(subprocess.check_output(f"cd {linterDir} && ./linter-script-file ../bonus/functional.asm", shell=useShell), encoding='utf-8')
+    if len(checkerOutput) > 0:
+        linter_points = 0.0
+
+    print(f"LINTER SCORE: {linter_points} / 5.00\n")
+    points += linter_points
+
+def check_readme():
+    global points
+    readme_points= 5.0
+
+    print("======================= README =======================\n")
+
+    if not os.path.isfile(readme_path):
+        readme_points = 0.0
+
+    print(f"LINTER SCORE: {readme_points} / 5.00\n")
+    points += readme_points
 #=======================================================================#
 
 if args.zip:
@@ -99,6 +137,8 @@ if args.task == None and args.all:
     for task in range(1, tasksNo + 1):
         test_task(task)
     test_bonus()
+    run_linter()
+    check_readme()
 elif args.task == 'b':
     test_bonus()
 elif args.task != None:
