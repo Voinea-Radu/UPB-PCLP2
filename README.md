@@ -211,6 +211,19 @@ Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle (**Pentru ca f
 La o rulare normală, checker-ul nu va păstra output-urile voastre, ci va face clean.
 Pentru a păstra output-urile, adăugați argumentul `--no_clean` la comanda de rulare a checker-ului.
 
+## Punctare task-uri
+
+| Task | Punctaj |
+| - | - |
+| Task-1 | 30pt |
+| Task-2 | 30pt |
+| Task-3 | 30pt |
+| Bonus | 30pt |
+| Readme | 5pt |
+| Coding style | 5pt |
+
+În total, pe această temă, se pot obține 120 de puncte pe task-uri, cu tot cu bonusul. Punctajul pe task-uri **se trunchiază la 90 de puncte**.
+
 ## Depunctări
 
 Formatul încorect al arhivei duce la **depunctarea întregii teme**.
