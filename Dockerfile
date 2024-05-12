@@ -1,5 +1,7 @@
 FROM jokeswar/base-ctl
 
-RUN echo "Hello from Docker"
+ENV DEBIAN_FRONTEND noninteractive
 
-COPY ./checker ${CHECKER_DATA_DIRECTORY}
+RUN apt-get update -yqq && \
+    apt-get install -yqq gcc-multilib nasm bc qemu-user gdb && \
+    apt-get install -y build-essential valgrind
