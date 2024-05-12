@@ -5,6 +5,7 @@ section .text
     ;; no extern functions allowed
 
 binary_search:
+    ;; create the new stack frame
     enter 0, 0
 
     ;; save the preserved registers

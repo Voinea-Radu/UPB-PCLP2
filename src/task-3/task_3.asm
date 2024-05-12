@@ -9,11 +9,13 @@ struc neighbours_t
 endstruc
 
 section .bss
-visited resd 10000   ; Vector for keeping track of visited nodes.
+; Vector for keeping track of visited nodes.
+visited resd 10000
 global visited
 
 section .data
-fmt_str db "%u", 10, 0     ; Format string for printf.
+; Format string for printf.
+fmt_str db "%u", 10, 0
 
 section .text
 global dfs

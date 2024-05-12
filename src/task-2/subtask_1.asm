@@ -5,6 +5,7 @@ section .text
     ;; no extern functions allowed
 
 quick_sort:
+    ;; create the new stack frame
     enter 0, 0
 
     ;; save the preserved registers
