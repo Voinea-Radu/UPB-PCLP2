@@ -181,3 +181,29 @@ reduce(src, n, accumulator_initial, to_apply):
         acc = to_apply(acc, src[i])
     return acc
 ```
+
+## Checker
+
+Pentru a folosi checker-ul `local_checker.py`, este necesar să aveți Python3 instalat.
+
+Pentru a vedea lista de argumente posibile a script-ului:
+
+```bash
+    python3 local_checker.py --help
+```
+
+Pentru a rula toate testele:
+
+```bash
+    python3 local_checker.py --all
+```
+
+Pentru a crea arhiva pe care trebuie să o încărcați pe Moodle (**Pentru ca fisierul README sa fie inclus, trebuie sa fie in directorul src/ .**):
+
+```bash
+    python3 local_checker.py --zip
+```
+
+La o rulare normală, checker-ul nu va păstra output-urile voastre, ci va face clean.
+Pentru a păstra output-urile, adăugați argumentul `--no_clean` la comanda de rulare a checker-ului.
+Formatul incorect al arhivei duce la depunctarea intregii teme.
