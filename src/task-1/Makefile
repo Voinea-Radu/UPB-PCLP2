@@ -8,4 +8,4 @@ main.o: main.c
 	gcc -g -m32 -c -o $@ $<
 
 clean:
-	rm *.o paranthesinator
+	rm *.o paranthesinator out/*.out
