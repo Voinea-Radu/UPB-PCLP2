@@ -25,10 +25,10 @@ tasksNo = 3
 
 runExec = "./"
 checker = "checker"
-taskDir = "../src/task-"
-bonusDir = "../src/bonus"
-linterDir = "../src/linter"
-readme_path = "../src/README"
+taskDir = "task-"
+bonusDir = "bonus"
+linterDir = "linter"
+readme_path = "README"
 
 zipName = "VMChecker_Homework_3"
 
@@ -124,7 +124,7 @@ def check_readme():
 #=======================================================================#
 
 if args.zip:
-    rc = subprocess.call(f"cd ..; zip -r {zipName} src/*/*.asm src/README", shell=useShell)
+    rc = subprocess.call(f"zip -r {zipName} */*.asm README", shell=useShell)
     exit(rc)
 
 print("\n" + header)
