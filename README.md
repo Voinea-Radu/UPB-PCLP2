@@ -107,14 +107,14 @@ Luăm graful următor ca exemplu:
 
 Dacă nodul sursă este 1, atunci o posibilă cautare dfs ar fi urmatoarea:
 
-* Nodul 1 este vizitat.
-* Nodul 2 este vizitat.
-* Nodul 2 nu are vecini, ne întoarcem la nodul 1.
-* Nodul 3 este vizitat.
-* Nodul 2 a fost deja vizitat, vizitam nodul 4.
-* Nodul 3 a fost deja vizitat, iar nodul 4 nu mai are vecini, deci ne întoarcem la nodul 3.
-* Nodul 3 nu mai are vecini, ne întoarcem la nodul 1.
-* Nodul 1 nu mai are vecini, se încheie căutarea.
+- Nodul 1 este vizitat.
+- Nodul 2 este vizitat.
+- Nodul 2 nu are vecini, ne întoarcem la nodul 1.
+- Nodul 3 este vizitat.
+- Nodul 2 a fost deja vizitat, vizitam nodul 4.
+- Nodul 3 a fost deja vizitat, iar nodul 4 nu mai are vecini, deci ne întoarcem la nodul 3.
+- Nodul 3 nu mai are vecini, ne întoarcem la nodul 1.
+- Nodul 1 nu mai are vecini, se încheie căutarea.
 
 Dfs-ul poate avea mai multe căutari valide, în funcție de ordinea în care alegem să vizităm vecinii. În cazul nostru, celelalte posibilități de căutare ar fi {1, 3, 2, 4} și {1, 3, 4, 2}.
 
