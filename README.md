@@ -7,42 +7,26 @@
 - Cristian Lazar
 - Valentin-Razvan Bogdan
 
-După ce și-a făcut atâția prieteni în cadrul temei 2, suricata Zoly 
-a efectuat un audit de securitate al rețelelor clanurilor cărora 
-s-a alăturat și și-a dat seama că nu există nicio măsură adecvată
-de securitate. Astfel, ea dorește să își creeze propriul sistem
-de detecție si prevenire a intruziunilor in rețea, si vă
-roagă să o ajutați cu implementarea unor componente ale acestuia.
+După ce și-a făcut atâția prieteni în cadrul temei 2, suricata Zoly a efectuat un audit de securitate al rețelelor clanurilor cărora s-a alăturat și și-a dat seama că nu există nicio măsură adecvată de securitate. Astfel, ea dorește să își creeze propriul sistem de detecție si prevenire a intruziunilor in rețea, si vă roagă să o ajutați cu implementarea unor componente ale acestuia.
 
 ## Task 1 - Parantezinatorul
 
-Sistemul se bazează pe anumite reguli care trebuie scrise într-un
-fișier de configurare.
-Un aspect important al verificării acestor reguli este parantezarea
-diferitelor elemente ale regulii.
+Sistemul se bazează pe anumite reguli care trebuie scrise într-un fișier de configurare.
+Un aspect important al verificării acestor reguli este parantezarea diferitelor elemente ale regulii.
 
-În acest task va trebui să implementați o funcție care verifică
-dacă un șir de paranteze formează o parantezare corectă, adică
-dacă toate parantezele deschise sunt închise corespunzător.
+În acest task va trebui să implementați o funcție care verifică dacă un șir de paranteze formează o parantezare corectă, adică dacă toate parantezele deschise sunt închise corespunzător.
 
-De exemplu, șirul "()()" este o parantezare corectă, dar
-"{{}" nu este, pentru ca se închide doar o paranteză,
-și nici "{[}]" nu este, pentru că parantezele nu sunt
-închise corespunzător.
+De exemplu, șirul "()()" este o parantezare corectă, dar "{{}" nu este, pentru ca se închide doar o paranteză, și nici "{[}]" nu este, pentru că parantezele nu sunt închise corespunzător.
 
-Funcția pe care o veți implementa va returna 0 daca nu sunt probleme
-de parantezare (dacă sunt parantezele puse bine) si 1 altfel.
+Funcția pe care o veți implementa va returna 0 daca nu sunt probleme de parantezare (dacă sunt parantezele puse bine) si 1 altfel.
 
 ## Task 2 - Divide et impera
 
-În acest task veți implementa doi algoritmi bine cunoscuți (sperăm noi):
-*quick sort* și *binary search*.
+În acest task veți implementa doi algoritmi bine cunoscuți (sperăm noi): *quick sort* și *binary search*.
 
 *Note:* ambele implementări trebuie să fie recursive, NU iterative.
 
-Pentru a rula toate testele, rulați executabilul generat fară niciun
-argument. Pentru a rula un singur test, pasati unul dintre keyword-urile
-`qsort` și `bsearch` ca prim argument, urmat de numărul testului.
+Pentru a rula toate testele, rulați executabilul generat fară niciun argument. Pentru a rula un singur test, pasati unul dintre keyword-urile `qsort` și `bsearch` ca prim argument, urmat de numărul testului.
 De exemplu:
 
 ```bash
@@ -58,12 +42,9 @@ $ ./checker bsearch 10
 
 ### Exercițiul 1
 
-Pentru acest exercițiu aveți de implementat funcția `quick_sort()` în fișierul
-`subtask_1.asm`.
+Pentru acest exercițiu aveți de implementat funcția `quick_sort()` în fișierul `subtask_1.asm`.
 
-Această funcție are semnătura de mai jos. În urma rulării ei, numerele stocate
-în `buff` vor fi sortate crescător. `start` și `end` reprezintă indexul
-primului, respectiv ultimului element (începând de la 0).
+Această funcție are semnătura de mai jos. În urma rulării ei, numerele stocate în `buff` vor fi sortate crescător. `start` și `end` reprezintă indexul primului, respectiv ultimului element (începând de la 0).
 
 ```c
 void quick_sort(int32_t *buff, uint32_t start, uint32_t end);
@@ -73,18 +54,12 @@ void quick_sort(int32_t *buff, uint32_t start, uint32_t end);
 
 ### Exercițiul 2
 
-În acest exercițiu va trebui sa implementați funcția `binary_search()` în
-fișierul `subtask_2.asm`.
+În acest exercițiu va trebui sa implementați funcția `binary_search()` în fișierul `subtask_2.asm`.
 
-Această funcție va returna poziția elementului `needle` in cadrul array-ului
-`buff`. Căutarea va avea loc între elementele indexate `start` și `end`
-(inclusiv). Dacă `needle` nu se găsește în `buff`, funcția va returna `-1`.
-Este garantat faptul că elementele din `buff` sunt sortate crescător.
+Această funcție va returna poziția elementului `needle` in cadrul array-ului `buff`. Căutarea va avea loc între elementele indexate `start` și `end` (inclusiv). Dacă `needle` nu se găsește în `buff`, funcția va returna `-1`. Este garantat faptul că elementele din `buff` sunt sortate crescător.
 
-Observați în cadrul semnăturii funcției atributul
-[fastcall](https://gcc.gnu.org/onlinedocs/gcc-4.7.0/gcc/Function-Attributes.html).
-Acesta va modifica calling convention-ul utilizat in `check.c`. Țineți cont de
-acest lucru când implementați funcția (și când faceți apelurile recursive).
+Observați în cadrul semnăturii funcției atributul [fastcall](https://gcc.gnu.org/onlinedocs/gcc-4.7.0/gcc/Function-Attributes.html).
+Acesta va modifica calling convention-ul utilizat in `check.c`. Țineți cont de acest lucru când implementați funcția (și când faceți apelurile recursive).
 
 ```c
 int32_t __attribute__((fastcall))
@@ -157,16 +132,9 @@ Printarea se va realiza prin apelara funcției `printf`.
 
 ## Bonus
 
-Acum ca Zoly și-a scris sistemul de detecție a intruziunilor
-și își poate apăra toți prietenii pe care și i-a facut în tema 2,
-se poate întoarce la marea ei pasiune: programarea funcțională.
+Acum ca Zoly și-a scris sistemul de detecție a intruziunilor și își poate apăra toți prietenii pe care și i-a facut în tema 2, se poate întoarce la marea ei pasiune: programarea funcțională.
 
-Totodată, spre deosebire de echipa de PCLP2, ea a înțeles că în
-prezent se folosesc sisteme pe 64 de biți, iar cele pe 32 de biți
-sunt foarte rare. Astfel, ea dorește să implementeze funcțiile
-`map` și `reduce` în assembly pe 64 de biți si folosim și numere
-pe 64 de biți. Stiți de la
-[tema 1](https://gitlab.cs.pub.ro/iocla/tema-1-2024) ce sunt fiecare.
+Totodată, spre deosebire de echipa de PCLP2, ea a înțeles că în prezent se folosesc sisteme pe 64 de biți, iar cele pe 32 de biți sunt foarte rare. Astfel, ea dorește să implementeze funcțiile `map` și `reduce` în assembly pe 64 de biți si folosim și numere pe 64 de biți. Stiți de la [tema 1](https://gitlab.cs.pub.ro/iocla/tema-1-2024) ce sunt fiecare.
 
 ## Map
 
