@@ -22,8 +22,7 @@ Funcția pe care o veți implementa va returna 0 daca nu sunt probleme de parant
 
 ## Task 2 - Divide et impera
 
-Acum că am verificat corectitudinea regulilor, trebuie să le sortăm după mai multe criterii numerice. Deoarece o implementare în C este prea high level, ne trebuie un algoritm de sortare eficient scris în assembly, și anume *quick sort*.
-Deoarece trebuie să putem identifica regulile dupa sortare, ne trebuie și un mod de căutare în lista de reguli. Un algoritm eficient de căutare într-o listă sortată este *binary search*.
+Considerand ca s-a incalzit suficient cu primul task, Zoly a decis ca nu are nevoie de o pauza (bine meritata de altfel) si ca vrea sa termine mai repede ~~tema~~ sistemul revolutionar de intrusion detection. Neavand insa incredere in alti programatori, s-a gasit nevoita sa reimplementeze cativa algoritmi necesari ei: *quick sort* si *binary search*. Si doar pentru a arata ca poate, a hotarat sa implementeze variantele *recursive*!
 
 În acest task veți implementa cei doi algoritmi: *quick sort* și *binary search*.
 
@@ -52,6 +51,8 @@ Această funcție are semnătura de mai jos. În urma rulării ei, numerele stoc
 ```c
 void quick_sort(int32_t *buff, uint32_t start, uint32_t end);
 ```
+
+Dacă nu sunteți familiari cu algoritmul *quick sort*, aruncați o privire [aici](https://www.programiz.com/dsa/quick-sort) sau întrebați un prieten ;)
 
 ---
 
