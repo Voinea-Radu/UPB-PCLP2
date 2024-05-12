@@ -26,6 +26,7 @@ tasksNo = 3
 runExec = "./"
 checker = "checker"
 taskDir = "../src/task-"
+bonusDir = "../src/bonus"
 
 zipName = "VMChecker_Homework_2"
 
@@ -58,6 +59,30 @@ def test_task(taskNo):
 
     rc = subprocess.call(f"make -C {taskString} clean > /dev/null 2> /dev/null", shell=useShell)
 
+def test_bonus():
+    global points
+
+    taskString = f"{bonusDir}/"
+    procString = runExec + taskString + checker
+    rc = subprocess.call(f"make -C {taskString} > /dev/null 2> /dev/null", shell=useShell)
+
+    if rc != 0:
+        sys.stderr.write("make failed with status %d\n" % rc)
+        return
+
+    if not os.path.exists(procString):
+        sys.stderr.write("The file %s is missing and could not be created with \'make\'" % (taskString + checker))
+        return
+
+    checkerOutput = str(subprocess.check_output(f"cd {taskString} && ./checker", shell=useShell), encoding='utf-8')
+
+    print(checkerOutput)
+    taskScore = re.findall(r'\d+\.\d+', re.findall(fr'TASK BONUS SCORE: \d+\.\d+', checkerOutput)[0])[0]
+
+    points += float(taskScore)
+
+    rc = subprocess.call(f"make -C {taskString} clean > /dev/null 2> /dev/null", shell=useShell)
+
 #=======================================================================#
 
 if args.zip:
@@ -73,6 +98,9 @@ points = 0
 if args.task == None and args.all:
     for task in range(1, tasksNo + 1):
         test_task(task)
+    test_bonus()
+elif args.task == 'b':
+    test_bonus()
 elif args.task != None:
     test_task(re.findall(r'\d', args.task)[0])
 
