@@ -8,22 +8,22 @@
 - Valentin-Razvan Bogdan
 
 După ce și-a făcut atâția prieteni în cadrul temei 2, suricata Zoly 
-a efectuat un audit se securitate al rețelelor clanurilor cărora 
+a efectuat un audit de securitate al rețelelor clanurilor cărora 
 s-a alăturat și și-a dat seama că nu există nicio măsură adecvată
 de securitate. Astfel, ea dorește să își creeze propriul sistem
 de detecție si prevenire a intruziunilor in rețea, si vă
 roagă să o ajutați cu implementarea unor componente ale acestuia.
 
-## Task 1
+## Task 1 - Parantezinatorul
 
-Sistemul se bazează pe anumite reguli care trebuie scrise intr-un
+Sistemul se bazează pe anumite reguli care trebuie scrise într-un
 fișier de configurare.
 Un aspect important al verificării acestor reguli este parantezarea
 diferitelor elemente ale regulii.
 
 În acest task va trebui să implementați o funcție care verifică
 dacă un șir de paranteze formează o parantezare corectă, adică
-dacă toate parantezele deschise sunt inchise corespunzător.
+dacă toate parantezele deschise sunt închise corespunzător.
 
 De exemplu, șirul "()()" este o parantezare corectă, dar
 "{{}" nu este, pentru ca se închide doar o paranteză,
@@ -153,7 +153,7 @@ Printarea se va realiza prin apelara funcției `printf`.
 | Descriere | Depunctare |
 | --- | --- |
 | Folosire macro PRINTF32 | -10p |
-| Soluție nerecursivă | -30p |
+| Soluție nerecursivă | -20p |
 
 ## Bonus
 
