@@ -13,7 +13,7 @@ check_one() {
 
 #if [[ -z "$1" ]]; then
 	echo "---------------TASK BONUS---------------"
-	for i in $(seq 1 19); do
+	for i in $(seq 1 20); do
 		check_one $i
 	done
 	printf "\nTASK BONUS SCORE: %.2f / 30.00\n\n" $(echo "scale=2; $TASKS*1.5" | bc)
