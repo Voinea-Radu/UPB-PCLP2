@@ -1,4 +1,8 @@
+; Interpret this file as 64 bit assembly
 [bits 64]
+
+; Constants
+%define byte8 8
 
 section .text
     global map
@@ -17,16 +21,16 @@ map:
 
     xor r9, r9
     .loop:
-        cmp r9, rdx
-        je .loop_finish
+    cmp r9, rdx
+    je .loop_finish
 
-        mov rdi, [rsi + r9 * 8]
-        call rcx
-        mov rax, rax
-        mov [r8 + r9 * 8], rax
+    mov rdi, [rsi + r9 * byte8]
+    call rcx
+    mov rax, rax
+    mov [r8 + r9 * byte8], rax
 
-        inc r9
-        jmp .loop
+    inc r9
+    jmp .loop
 
     .loop_finish:
 
@@ -38,28 +42,33 @@ reduce:
     push rbp
     mov rbp, rsp
 
-    mov rdi, rdi ; dst ; ignored
-    mov rsi, rsi ; src
-    mov rdx, rdx ; n
-    mov rcx, rcx ; acc_init
-    mov r8, r8   ; f
+    ; dst ; ignored
+    mov rdi, rdi
+    ; src
+    mov rsi, rsi
+    ; n
+    mov rdx, rdx
+    ; acc_init
+    mov rcx, rcx
+    ; f
+    mov r8, r8
 
     mov r10, rsi
     mov rdi, rcx
 
     xor r9, r9
     .loop:
-        cmp r9, rdx
-        je .loop_finish
+    cmp r9, rdx
+    je .loop_finish
 
-        push rdx
-        mov rsi, [r10 + r9 * 8]
-        call r8
-        pop rdx
-        mov rdi, rax
+    push rdx
+    mov rsi, [r10 + r9 * byte8]
+    call r8
+    pop rdx
+    mov rdi, rax
 
-        inc r9
-        jmp .loop
+    inc r9
+    jmp .loop
 
     .loop_finish:
     mov rax, rdi

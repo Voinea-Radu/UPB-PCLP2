@@ -1,17 +1,26 @@
 %include "../include/io.mac"
 
+; Constants
+%define byte4 4
+
 struc neighbours_t
+    ; Neighbour count
     .neighbour_count resd 1
+    ; Neighbours
     .neighbours resd 1
 endstruc
 
 section .bss
+    ; Visited array of 10000 elements
     visited resd 10000
     global visited
 
 section .data
+    ; Output format string
     format_string db "%u", 10, 0
+    ; Current node
     node dd 0
+    ; Function pointer to expand
     expand dd 0
 
 section .text
@@ -20,11 +29,14 @@ section .text
 
 ;; void dfs(uint32_t node, neighbours_t *(*expand)(uint32_t node))
 dfs:
+    ; Enter a new stack frame
     enter 0,0
     pusha
 
-    mov ebx, [ebp + 8]  ; node
-    mov ecx, [ebp + 12] ; expand
+    ; node
+    mov ebx, [ebp + 8]
+    ; expand
+    mov ecx, [ebp + 12]
 
     mov DWORD [node], ebx
     mov DWORD [expand], ecx
@@ -32,42 +44,49 @@ dfs:
     push ebx
     push format_string
     call printf
+    ; Reset the stack pointer to its original state
     add esp, 8
 
-    mov DWORD [visited + ebx * 4], 1
+    ; Mark the node as visited
+    mov DWORD [visited + ebx * byte4], 1
 
     ; Free registers: eax, edx, esi, edi
     ; neighbours_t *neighbours = expand(node);
     mov ecx, DWORD [expand]
     push ebx
     call ecx
+    ; Reset the stack pointer to its original state
     add esp, 4
     ; eax = neighbours
 
     mov edx, DWORD [eax + neighbours_t.neighbour_count]
     mov esi, DWORD [eax + neighbours_t.neighbours]
 
+    ; Initialize the loop counter
     mov edi, 0
     .loop:
-        cmp edi, edx
-        jge .loop_end
+    cmp edi, edx
+    jge .loop_end
 
-        mov ebx, DWORD [esi + edi * 4] ; neighbour
+    ; neighbour
+    mov ebx, DWORD [esi + edi * byte4]
 
-        cmp DWORD [visited + ebx * 4], 0
-        je .not_visited
-        jmp .loop_continue
+    ; Check if the node is visited
+    cmp DWORD [visited + ebx * byte4], 0
+    je .not_visited
+    jmp .loop_continue
 
-        .not_visited:
-        mov ecx, DWORD [expand]
-        push ecx
-        push ebx
-        call dfs
-        add esp, 8
+    .not_visited:
+    mov ecx, DWORD [expand]
+    push ecx
+    push ebx
+    call dfs
+    ; Reset the stack pointer to its original state
+    add esp, 8
 
-        .loop_continue:
-        inc edi
-        jmp .loop
+    .loop_continue:
+    inc edi
+    jmp .loop
 
     .loop_end:
     popa
