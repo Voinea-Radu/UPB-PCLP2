@@ -1,3 +1,5 @@
+all: build
+
 build: main.o functional.o
 	gcc -g -m64 -no-pie -fno-PIC -o functional main.o functional.o
 
