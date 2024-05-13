@@ -2,3 +2,5 @@
 .idea
 /src/task-1/paranthesinator
 *.out
+debug.log
+checker
