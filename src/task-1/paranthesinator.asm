@@ -1,16 +1,18 @@
-; Interpret as 32 bits code
 [bits 32]
 
 %include "../include/io.mac"
 
 section .text
-; int check_parantheses(char *str)
 global check_parantheses
+
+; int check_parantheses(char *str)
 check_parantheses:
     push ebp
     mov ebp, esp
 
-    ; sa-nceapa concursul
+    mov eax, [ebp + 8] ; str
+
+
 
     leave
     ret

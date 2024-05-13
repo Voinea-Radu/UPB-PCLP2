@@ -1,3 +1,5 @@
+all: build
+
 build: paranthesinator.o main.o
 	gcc -g -m32 -o paranthesinator $^
 

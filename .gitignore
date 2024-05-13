@@ -1,0 +1,3 @@
+*.o
+.idea
+/src/task-1/paranthesinator
