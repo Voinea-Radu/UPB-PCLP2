@@ -53,7 +53,6 @@ check_parantheses:
 
             pop ebx
             dec DWORD [push_count]
-            ; PRINTF32 `%c%c\n\0x`, ebx, eax
 
             check_1:
                 cmp bl, '('
@@ -84,19 +83,16 @@ check_parantheses:
 
     valid_finish:
         mov DWORD [return_value], 0
-        ; PRINTF32 `VALID\n\0x`, ebx
         jmp pops
 
     invalid_finish:
         mov DWORD [return_value], 1
-        ; PRINTF32 `INVALID\n\0x`, ebx
         jmp pops
 
     pops:
         cmp DWORD [push_count], 0
         je finish
         mov DWORD [return_value], 1
-        ; PRINTF32 `INVALID\n\0x`, ebx
 
         pop eax
         dec DWORD [push_count]
