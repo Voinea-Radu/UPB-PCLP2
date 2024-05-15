@@ -1,0 +1,42 @@
+
+# Task 1  
+This assembly file contains the implementation of a parentheses checker. A
+string is balanced if for every opening bracket there is a corresponding
+closing bracket. The check_parantheses function checks if a string of
+parentheses is balanced or  not. It returns 0 if the string is balanced and 1
+if it is not.
+  
+# Task 2  
+  
+## Sub Task 1  
+  
+This assembly file contains the implementation of the Quick Sort algorithm.  
+The Quick Sort algorithm is a divide-and-conquer algorithm that works by  
+selecting a 'pivot' element from the array and partitioning the other elements  
+into two sub-arrays, according to whether they are less than or greater than  
+the pivot. The sub-arrays are then recursively sorted. The quick_sort function  
+sorts an array of integers in ascending order. The partition function is a  
+helper function used by the quick_sort function to partition the array around  
+a pivot.  
+  
+## Sub Task 2  
+  
+This assembly file contains the implementation of the Binary Search algorithm.  
+Binary Search is a search algorithm that finds the position of a target value  
+within a sorted array. It compares the target value to the middle element of  
+the array; if they are unequal, the half in which the target cannot lie is  
+eliminated and the search continues on the remaining half until it is  
+successful or the remaining half is empty. The binary_search function  
+searches for a specific value (needle) within a sorted array of integers.  
+If the value is found, the function returns its index. If the value is not  
+found, the function returns -1.  
+  
+# Task 3  
+This assembly file contains the implementation of the Depth-First Search (DFS)  
+algorithm. DFS is an algorithm for traversing or searching tree or graph data  
+structures. The algorithm starts at the root and explores as far as possible
+along each branch before backtracking. The dfs function traverses a graph in a
+depth-first manner. The function takes a node and a function pointer to an
+expand function, which returns the neighbors of a given node. The dfs function
+prints the nodes as they are visited and marks them as visited in a visited
+array.
